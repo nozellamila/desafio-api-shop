@@ -8,7 +8,8 @@ import io.restassured.http.Method;
 public class AuthRequest extends RequestBase {
 
     public AuthRequest(AuthBody authBody){
-        authenticationType = AuthenticationType.OAUTH2;
+        GlobalParameters globalParameters = new GlobalParameters();
+        url = globalParameters.URL_DEFAULT;
         requestService = "/auth";
         method = Method.POST;
         jsonBody = authBody;

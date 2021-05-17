@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 public class AuthTests {
     @Test
-    public void successfulAuthTest(){
+    public void successfulAuthenticate(){
         int expectedStatusCode = HttpStatus.SC_OK;
         String type = "Bearer";
         AuthBody authBody = new AuthBody();
@@ -28,7 +28,7 @@ public class AuthTests {
     }
 
     @Test
-    public void noExistingUserAuthTest(){
+    public void nonExistingUserAuthenticate(){
         int expectedStatusCode = HttpStatus.SC_BAD_REQUEST;
         AuthBody authBody = new AuthBody("fool@email.com", "123456");
 
@@ -40,7 +40,7 @@ public class AuthTests {
 
     @ParameterizedTest(name = "{index} => email={0}, password={1}, message={2}")
     @CsvFileSource(resources = "/data/auth/authValidations.csv")
-    public void invalidCredentialsAuthTest(String email, String password, String message){
+    public void invalidCredentialsAuthenticate(String email, String password, String message){
         int expectedStatusCode = HttpStatus.SC_BAD_REQUEST;
         String errorMessage = message;
         AuthBody authBody = new AuthBody(email, password);

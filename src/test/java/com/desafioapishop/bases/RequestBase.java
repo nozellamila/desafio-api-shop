@@ -59,7 +59,7 @@ public abstract class RequestBase {
         queryParameters.remove(parameter);
     }
 
-    public void setMehtod(Method method){
+    public void setMethod(Method method){
         this.method = method;
     }
 }

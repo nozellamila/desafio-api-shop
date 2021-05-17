@@ -1,0 +1,8 @@
+foo,foo, 123456,[Insira um email válido]
+foo@email.com,foo,123,[Senha deve ter 6 a 10 digitos]
+,foo,123456,[Email não deve ser nulo ou vazio]
+"",foo, 123456,"[Email não deve ser nulo ou vazio]"
+foo@email.com, foo,"","[Senha deve ter 6 a 10 digitos, Senha não deve ser nulo ou vazio]"
+foo@email.com, foo,,[Senha não deve ser nulo ou vazio]
+foo@email.com,,123456,[Nome não deve ser nulo ou vazio]
+foo@email.com,"",123456,[Nome não deve ser nulo ou vazio]

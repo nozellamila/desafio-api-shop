@@ -9,6 +9,7 @@ public class AuthUtils {
     public static void generateToken(AuthBody authBody){
         AuthRequest getToken = new AuthRequest(authBody);
         Response response = getToken.executeRequestNoLog();
-        GlobalParameters.setToken(response.body().jsonPath().get("token").toString());
+        GlobalParameters globalParameters = new GlobalParameters();
+        globalParameters.setToken(response.body().jsonPath().get("token").toString());
     }
 }

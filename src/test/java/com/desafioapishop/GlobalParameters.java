@@ -19,6 +19,9 @@ public class GlobalParameters {
     public static String TOKEN;
     public static String AUTHENTICATOR_USER;
     public static String AUTHENTICATOR_PASSWORD;
+    public static String NONADMIN_USER;
+    public static String NONADMIN_PASSWORD;
+    public static String TOEXCLUDE_USER;
 
     private Properties properties;
 
@@ -49,6 +52,9 @@ public class GlobalParameters {
             TOKEN = properties.getProperty("hml.token");
             AUTHENTICATOR_USER = properties.getProperty("hml.authenticator.user");
             AUTHENTICATOR_PASSWORD = properties.getProperty("hml.authenticator.password");
+            NONADMIN_USER = properties.getProperty("hml.nonadmin.user");
+            NONADMIN_PASSWORD = properties.getProperty("hml.nonadmin.password");
+            TOEXCLUDE_USER = properties.getProperty("hml.toexclude.user");
         }
 
         if(ENVIROMENT.equals("dev")){
@@ -61,10 +67,25 @@ public class GlobalParameters {
             TOKEN = properties.getProperty("dev.token");
             AUTHENTICATOR_USER = properties.getProperty("dev.authenticator.user");
             AUTHENTICATOR_PASSWORD = properties.getProperty("dev.authenticator.password");
+            NONADMIN_USER = properties.getProperty("dev.nonadmin.user");
+            NONADMIN_PASSWORD = properties.getProperty("dev.nonadmin.password");
+            TOEXCLUDE_USER = properties.getProperty("dev.toexclude.user");
         }
     }
 
-    public static void setToken(String token){
+    public void setToken(String token){
+        properties = new Properties();
+        InputStream input = null;
+
+        try {
+            input = new FileInputStream("src/test/globalParameters.properties");
+            properties.load(input);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        properties.setProperty("dev.token", token);
         TOKEN = token;
     }
 }

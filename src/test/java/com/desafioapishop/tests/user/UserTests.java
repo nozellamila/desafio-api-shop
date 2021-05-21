@@ -6,6 +6,7 @@ import com.desafioapishop.requests.auth.AuthRequest;
 import com.desafioapishop.requests.user.UserBody;
 import com.desafioapishop.requests.user.UserRequest;
 import com.desafioapishop.utils.AuthUtils;
+import com.desafioapishop.utils.DBUtils;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
@@ -17,8 +18,13 @@ import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Properties;
 import java.util.Random;
 
 
@@ -84,6 +90,7 @@ public class UserTests {
     @Test
     public void successfulUserUpdate(){
         int expectedStatusCode = HttpStatus.SC_OK;
+        //DBUtils.executeInitialQuery();
 
         GlobalParameters globalParameters = new GlobalParameters();
 
@@ -94,11 +101,11 @@ public class UserTests {
 
         AuthBody authBody = new AuthBody();
         AuthUtils authUtils = new AuthUtils();
-        authUtils.generateToken(authBody);
+        String token = authUtils.generateToken(authBody);
 
         UserRequest userRequest = new UserRequest();
         UserBody userBody = new UserBody(email, name, password, roles);
-        userRequest.setPutUserRequest(userBody, 2);
+        userRequest.setPutUserRequest(token, userBody, 2);
 
         ValidatableResponse response = userRequest.executeRequest();
         response.statusCode(expectedStatusCode);
@@ -106,8 +113,24 @@ public class UserTests {
     }
 
     @Test
-    public void forbiddenUserUpdate(){
+    public void forbiddenUserUpdate() throws IOException {
+        Properties properties = new Properties();
+        InputStream input = null;
 
+        AuthBody authBody = new AuthBody();
+        AuthUtils authUtils = new AuthUtils();
+        String token = authUtils.generateToken(authBody);
+
+        try {
+            input = new FileInputStream("src/test/globalParameters.properties");
+            properties.load(input);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        properties.replace("dev.token", token);
+        input.close();
     }
 
     @Test

@@ -12,8 +12,8 @@ public class AuthBody {
 
     public AuthBody(){
         GlobalParameters globalParameters = new GlobalParameters();
-        this.email = GlobalParameters.AUTHENTICATOR_USER;
-        this.password = GlobalParameters.AUTHENTICATOR_PASSWORD;
+        this.email = globalParameters.AUTHENTICATOR_USER;
+        this.password = globalParameters.AUTHENTICATOR_PASSWORD;
     }
 
 }

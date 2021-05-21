@@ -6,10 +6,10 @@ import com.desafioapishop.requests.auth.AuthRequest;
 import io.restassured.response.Response;
 
 public class AuthUtils {
-    public static void generateToken(AuthBody authBody){
+    public static String generateToken(AuthBody authBody){
         AuthRequest getToken = new AuthRequest(authBody);
         Response response = getToken.executeRequestNoLog();
-        GlobalParameters globalParameters = new GlobalParameters();
-        globalParameters.setToken(response.body().jsonPath().get("token").toString());
+
+        return "Bearer " + response.body().jsonPath().get("token").toString();
     }
 }

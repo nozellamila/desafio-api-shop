@@ -1,5 +1,9 @@
 package com.desafioapishop;
 
+import com.desafioapishop.requests.auth.AuthBody;
+import com.desafioapishop.requests.auth.AuthRequest;
+import io.restassured.response.Response;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -15,8 +19,6 @@ public class GlobalParameters {
     public static String DB_NAME;
     public static String DB_USER;
     public static String DB_PASSWORD;
-    public static String URL_TOKEN;
-    public static String TOKEN;
     public static String AUTHENTICATOR_USER;
     public static String AUTHENTICATOR_PASSWORD;
     public static String NONADMIN_USER;
@@ -48,8 +50,6 @@ public class GlobalParameters {
             DB_USER = properties.getProperty("hml.db.user");
             DB_PASSWORD = properties.getProperty("hml.db.password");
             URL_DEFAULT = properties.getProperty("hml.url.default");
-            URL_TOKEN = properties.getProperty("hml.url.token");
-            TOKEN = properties.getProperty("hml.token");
             AUTHENTICATOR_USER = properties.getProperty("hml.authenticator.user");
             AUTHENTICATOR_PASSWORD = properties.getProperty("hml.authenticator.password");
             NONADMIN_USER = properties.getProperty("hml.nonadmin.user");
@@ -63,8 +63,6 @@ public class GlobalParameters {
             DB_USER = properties.getProperty("dev.db.user");
             DB_PASSWORD = properties.getProperty("dev.db.password");
             URL_DEFAULT = properties.getProperty("dev.url.default");
-            URL_TOKEN = properties.getProperty("dev.url.token");
-            TOKEN = properties.getProperty("dev.token");
             AUTHENTICATOR_USER = properties.getProperty("dev.authenticator.user");
             AUTHENTICATOR_PASSWORD = properties.getProperty("dev.authenticator.password");
             NONADMIN_USER = properties.getProperty("dev.nonadmin.user");
@@ -73,19 +71,4 @@ public class GlobalParameters {
         }
     }
 
-    public void setToken(String token){
-        properties = new Properties();
-        InputStream input = null;
-
-        try {
-            input = new FileInputStream("src/test/globalParameters.properties");
-            properties.load(input);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        properties.setProperty("dev.token", token);
-        TOKEN = token;
-    }
 }

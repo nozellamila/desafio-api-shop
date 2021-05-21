@@ -40,7 +40,7 @@ public class AuthTests {
 
     @ParameterizedTest(name = "{index} => email={0}, password={1}, message={2}")
     @CsvFileSource(resources = "/data/auth/authValidations.csv")
-    public void invalidCredentialsAuthenticate(String email, String password, String message){
+    public void validateCredentialsAuthenticate(String email, String password, String message){
         int expectedStatusCode = HttpStatus.SC_BAD_REQUEST;
         String errorMessage = message;
         AuthBody authBody = new AuthBody(email, password);

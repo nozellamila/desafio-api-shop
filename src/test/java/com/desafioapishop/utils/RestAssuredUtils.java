@@ -46,8 +46,6 @@ public class RestAssuredUtils {
             case PREEMPTIVE:
                 requestSpecification.auth().preemptive().basic(authenticatorUser, authenticatorPassword);
                 break;
-            case OAUTH2:
-                requestSpecification.auth().oauth2("Bearer "+ GlobalParameters.TOKEN);
             case NONE:
                 break;
             default:

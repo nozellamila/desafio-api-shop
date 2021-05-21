@@ -3,6 +3,7 @@ package com.desafioapishop.requests.user;
 import com.desafioapishop.GlobalParameters;
 import com.desafioapishop.bases.RequestBase;
 import com.desafioapishop.requests.auth.AuthBody;
+import com.desafioapishop.utils.enums.AuthenticationType;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 
@@ -21,9 +22,9 @@ public class UserRequest extends RequestBase {
         method = Method.POST;
     }
 
-    public void setPutUserRequest(UserBody userBody, Integer userId){
+    public void setPutUserRequest(String token, UserBody userBody, Integer userId){
         GlobalParameters globalParameters = new GlobalParameters();
-        headers.put("Authorization", "Bearer " + globalParameters.TOKEN);
+        headers.put("Authorization", token);
         jsonBody = userBody;
         method = Method.PUT;
         requestService = "/users/" + userId.toString();

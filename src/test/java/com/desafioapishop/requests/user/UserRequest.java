@@ -23,29 +23,27 @@ public class UserRequest extends RequestBase {
     }
 
     public void setPutUserRequest(String token, UserBody userBody, Integer userId){
-        GlobalParameters globalParameters = new GlobalParameters();
         headers.put("Authorization", token);
         jsonBody = userBody;
         method = Method.PUT;
         requestService = "/users/" + userId.toString();
     }
 
-    public void setDeleteUserRequest(Integer userId){
+    public void setDeleteUserRequest(String token, Integer userId){
+        headers.put("Authorization", token);
         method = Method.DELETE;
         requestService = "/users/" + userId.toString();
     }
 
-    public void setGetOneUserRequest(Integer userId){
+    public void setGetOneUserRequest(String token, Integer userId){
+        headers.put("Authorization", token);
         method = Method.GET;
         requestService = "/users/" + userId.toString();
     }
 
-    public void setGetUserWithParamsRequest(Map<String, String> requestParameters){
+    public void setGetUserWithParamsRequest(String token, Map<String, String> requestParameters){
+        headers.put("Authorization", token);
         method = Method.GET;
         queryParameters = requestParameters;
-    }
-
-    public void setRequestMethod(Method requestMethod){
-        method = requestMethod;
     }
 }

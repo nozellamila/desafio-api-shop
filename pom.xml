@@ -83,7 +83,7 @@
 
                 <configuration>
                     <parallel>all</parallel>
-                    <threadCount>2</threadCount>
+                    <threadCount>4</threadCount>
                 </configuration>
 
             </plugin>

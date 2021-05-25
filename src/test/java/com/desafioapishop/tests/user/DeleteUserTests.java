@@ -5,12 +5,16 @@ import com.desafioapishop.bases.TestBase;
 import com.desafioapishop.requests.auth.AuthBody;
 import com.desafioapishop.requests.user.UserRequest;
 import com.desafioapishop.utils.AuthUtils;
+import com.desafioapishop.utils.DBUtils;
 import com.desafioapishop.utils.steps.UserSteps;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.hamcrest.Matchers.*;
 
@@ -22,11 +26,10 @@ public class DeleteUserTests extends TestBase {
         int expectedStatusCode = HttpStatus.SC_OK;
         String message = "Usuário excluído com sucesso";
 
-        GlobalParameters globalParameters = new GlobalParameters();
-        String userId = globalParameters.TOEXCLUDE_USERID;
+        List<String> userId = DBUtils.getQueryResult("FindUserToExclude.sql");
 
         UserRequest userRequest = new UserRequest();
-        userRequest.setDeleteUserRequest(token, userId);
+        userRequest.setDeleteUserRequest(token, userId.get(0));
 
         ValidatableResponse response = userRequest.executeRequest();
         response.statusCode(expectedStatusCode);

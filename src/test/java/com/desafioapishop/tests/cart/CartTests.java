@@ -19,30 +19,54 @@ public class CartTests extends TestBase {
 
     }
 
+    @Test
+    public void shouldNotRegisterCartWithNonExistingProduct(){
 
+    }
+
+
+    @Test//parametrized
+    public void shouldNotRegisterCartWithInvalidParameters(){
+        //wrong quantity, invalid quantity, empty quantity, null quantity, same for product
+    }
 
     @Test
     public void forbiddenRegisterCart(){
 
     }
 
-    @Test//parametrized: product = 0, product > product.quantity, product.quantity < 0
-    public void shouldNotRegisterCartWithInvalidProductQuantity(){
-
-    }
-
     @Test
     public void listOneCart(){
-
+        //assert with regex of creationDate
     }
 
-    @Test
+    @Test//parametrized
     public void listCartWithFilters(){
 
     }
 
     @Test
+    public void successfulFinishBuy(){
+
+    }
+
+    @Test
+    public void shouldNotFinishBuyForUserWithNoCart(){
+
+    }
+
+    @Test
     public void forbiddenFinishBuy(){
+
+    }
+
+    @Test
+    public void successfulCancelBuy(){
+        //assert product quantity returns to its original
+    }
+
+    @Test
+    public void shouldNotCancelBuyForUserWithNoCart(){
 
     }
 

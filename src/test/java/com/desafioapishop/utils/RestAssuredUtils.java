@@ -1,7 +1,5 @@
 package com.desafioapishop.utils;
 
-import com.desafioapishop.GlobalParameters;
-import com.desafioapishop.utils.enums.AuthenticationType;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
@@ -18,8 +16,7 @@ public class RestAssuredUtils {
                                               Map<String,String> queryParameters,
                                               Object jsonBody,
                                               String authenticatorUser,
-                                              String authenticatorPassword,
-                                              AuthenticationType authenticationType){
+                                              String authenticatorPassword){
 
         RequestSpecification requestSpecification = RestAssured.given();
 
@@ -39,22 +36,6 @@ public class RestAssuredUtils {
             requestSpecification.body(jsonBody);
         }
 
-        switch (authenticationType){
-            case BASIC:
-                requestSpecification.auth().basic(authenticatorUser, authenticatorPassword);
-                break;
-            case PREEMPTIVE:
-                requestSpecification.auth().preemptive().basic(authenticatorUser, authenticatorPassword);
-                break;
-            case NONE:
-                break;
-            default:
-                try {
-                    throw new Exception("Authentication type not implemented");
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-        }
 
         return requestSpecification.request(method, URI.create(url+requestService));
     }
@@ -64,8 +45,7 @@ public class RestAssuredUtils {
                                               Map<String, String> cookies,
                                               String xmlBody,
                                               String authenticatorUser,
-                                              String authenticatorPassword,
-                                              AuthenticationType authenticationType) {
+                                              String authenticatorPassword) {
 
         RequestSpecification requestSpecification = RestAssured.given();
 
@@ -79,23 +59,6 @@ public class RestAssuredUtils {
 
         if(xmlBody !=null){
             requestSpecification.body(xmlBody);
-        }
-
-        switch (authenticationType){
-            case BASIC:
-                requestSpecification.auth().basic(authenticatorUser, authenticatorPassword);
-                break;
-            case PREEMPTIVE:
-                requestSpecification.auth().preemptive().basic(authenticatorUser, authenticatorPassword);
-                break;
-            case NONE:
-                break;
-            default:
-                try {
-                    throw new Exception("Authentication type not implemented");
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
         }
 
         return requestSpecification.request(Method.POST, URI.create(url));

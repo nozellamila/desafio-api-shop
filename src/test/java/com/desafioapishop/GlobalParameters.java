@@ -1,9 +1,5 @@
 package com.desafioapishop;
 
-import com.desafioapishop.requests.auth.AuthBody;
-import com.desafioapishop.requests.auth.AuthRequest;
-import io.restassured.response.Response;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -21,9 +17,10 @@ public class GlobalParameters {
     public static String DB_PASSWORD;
     public static String AUTHENTICATOR_USER;
     public static String AUTHENTICATOR_PASSWORD;
+    public static String NONADMIN_USERID;
     public static String NONADMIN_USER;
     public static String NONADMIN_PASSWORD;
-    public static String TOEXCLUDE_USER;
+    public static String TOEXCLUDE_USERID;
 
     private Properties properties;
 
@@ -52,9 +49,10 @@ public class GlobalParameters {
             URL_DEFAULT = properties.getProperty("hml.url.default");
             AUTHENTICATOR_USER = properties.getProperty("hml.authenticator.user");
             AUTHENTICATOR_PASSWORD = properties.getProperty("hml.authenticator.password");
+            NONADMIN_USERID = properties.getProperty("hml.nonadmin.userid");
             NONADMIN_USER = properties.getProperty("hml.nonadmin.user");
             NONADMIN_PASSWORD = properties.getProperty("hml.nonadmin.password");
-            TOEXCLUDE_USER = properties.getProperty("hml.toexclude.user");
+            TOEXCLUDE_USERID = properties.getProperty("hml.toexclude.userid");
         }
 
         if(ENVIROMENT.equals("dev")){
@@ -65,10 +63,10 @@ public class GlobalParameters {
             URL_DEFAULT = properties.getProperty("dev.url.default");
             AUTHENTICATOR_USER = properties.getProperty("dev.authenticator.user");
             AUTHENTICATOR_PASSWORD = properties.getProperty("dev.authenticator.password");
+            NONADMIN_USERID = properties.getProperty("dev.nonadmin.userid");
             NONADMIN_USER = properties.getProperty("dev.nonadmin.user");
             NONADMIN_PASSWORD = properties.getProperty("dev.nonadmin.password");
-            TOEXCLUDE_USER = properties.getProperty("dev.toexclude.user");
+            TOEXCLUDE_USERID = properties.getProperty("dev.toexclude.userid");
         }
     }
-
 }

@@ -2,7 +2,6 @@ package com.desafioapishop.requests.auth;
 
 import com.desafioapishop.GlobalParameters;
 import com.desafioapishop.bases.RequestBase;
-import com.desafioapishop.utils.enums.AuthenticationType;
 import io.restassured.http.Method;
 
 public class AuthRequest extends RequestBase {

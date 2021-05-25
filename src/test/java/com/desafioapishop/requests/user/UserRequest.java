@@ -3,7 +3,6 @@ package com.desafioapishop.requests.user;
 import com.desafioapishop.GlobalParameters;
 import com.desafioapishop.bases.RequestBase;
 import com.desafioapishop.requests.auth.AuthBody;
-import com.desafioapishop.utils.enums.AuthenticationType;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 
@@ -29,10 +28,10 @@ public class UserRequest extends RequestBase {
         requestService = "/users/" + userId.toString();
     }
 
-    public void setDeleteUserRequest(String token, Integer userId){
+    public void setDeleteUserRequest(String token, String userId){
         headers.put("Authorization", token);
         method = Method.DELETE;
-        requestService = "/users/" + userId.toString();
+        requestService = "/users/" + userId;
     }
 
     public void setGetOneUserRequest(String token, Integer userId){

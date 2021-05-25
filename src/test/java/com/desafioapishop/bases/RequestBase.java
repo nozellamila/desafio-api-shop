@@ -5,7 +5,6 @@ import static io.restassured.config.JsonConfig.jsonConfig;
 import static io.restassured.path.json.config.JsonPathConfig.NumberReturnType.BIG_DECIMAL;
 import com.desafioapishop.GlobalParameters;
 import com.desafioapishop.utils.RestAssuredUtils;
-import com.desafioapishop.utils.enums.AuthenticationType;
 import io.restassured.config.RestAssuredConfig;
 import io.restassured.http.*;
 import io.restassured.response.Response;
@@ -22,7 +21,6 @@ public abstract class RequestBase {
     protected Map<String, String> headers = new HashMap<String, String>();
     protected Map<String, String> cookies = new HashMap<String, String>();
     protected Map<String, String> queryParameters = new HashMap<String, String>();
-    protected AuthenticationType authenticationType = AuthenticationType.NONE;
     protected String authenticatorUser = GlobalParameters.AUTHENTICATOR_USER;
     protected String authenticatorPassword = GlobalParameters.AUTHENTICATOR_PASSWORD;
 
@@ -34,14 +32,14 @@ public abstract class RequestBase {
     }
 
     public ValidatableResponse executeRequest() {
-        Response response = RestAssuredUtils.executeRestRequest(url, requestService, method, headers, cookies, queryParameters, jsonBody, authenticatorUser, authenticatorPassword, authenticationType);
+        Response response = RestAssuredUtils.executeRestRequest(url, requestService, method, headers, cookies, queryParameters, jsonBody, authenticatorUser, authenticatorPassword);
         //ExtentReportsUtils.addRestTestInfo(url, requestService, method.toString(), headers, cookies, queryParameters, jsonBody, authenticationType, authenticatorUser, authenticatorPassword, response);
 
         return response.then();
     }
 
     public Response executeRequestNoLog() {
-        Response response = RestAssuredUtils.executeRestRequest(url, requestService, method, headers, cookies, queryParameters, jsonBody, authenticatorUser, authenticatorPassword, authenticationType);
+        Response response = RestAssuredUtils.executeRestRequest(url, requestService, method, headers, cookies, queryParameters, jsonBody, authenticatorUser, authenticatorPassword);
 
         return response;
     }

@@ -21,6 +21,7 @@ public class GlobalParameters {
     public static String NONADMIN_USER;
     public static String NONADMIN_PASSWORD;
     public static String TOEXCLUDE_USERID;
+    public static String TOREGISTERCART_USERID;
 
     private Properties properties;
 
@@ -53,6 +54,7 @@ public class GlobalParameters {
             NONADMIN_USER = properties.getProperty("hml.nonadmin.user");
             NONADMIN_PASSWORD = properties.getProperty("hml.nonadmin.password");
             TOEXCLUDE_USERID = properties.getProperty("hml.toexclude.userid");
+            TOREGISTERCART_USERID = properties.getProperty("hml.toregistercart.userid");
         }
 
         if(ENVIROMENT.equals("dev")){
@@ -67,6 +69,7 @@ public class GlobalParameters {
             NONADMIN_USER = properties.getProperty("dev.nonadmin.user");
             NONADMIN_PASSWORD = properties.getProperty("dev.nonadmin.password");
             TOEXCLUDE_USERID = properties.getProperty("dev.toexclude.userid");
+            TOREGISTERCART_USERID = properties.getProperty("dev.toregistercart.userid");
         }
     }
 }

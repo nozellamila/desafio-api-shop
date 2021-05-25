@@ -24,7 +24,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class RegisterUserTests extends TestBase {
 
     @Test
-    public void successfulUserRegister(){
+    public void successfulRegisterUser(){
         int expectedStatusCode = HttpStatus.SC_CREATED;
 
         int random = new Random().nextInt(100);
@@ -46,7 +46,7 @@ public class RegisterUserTests extends TestBase {
 
     @ParameterizedTest(name = "{index} => email={0}, name={1}, password={2}, message={3}")
     @CsvFileSource(resources = "/data/user/userValidations.csv")
-    public void invalidParametersUserRegister(String email, String name, String password, String message){
+    public void invalidParametersRegisterUser(String email, String name, String password, String message){
         int expectedStatusCode = HttpStatus.SC_BAD_REQUEST;
         String errorMessage = message;
         List<String> roles = Arrays.asList("USER");
@@ -63,7 +63,7 @@ public class RegisterUserTests extends TestBase {
 
     @Test
     public void shouldNotRegisterUserWithOtherUsersEmail(){
-        int expectedStatusCode = HttpStatus.SC_BAD_REQUEST;
+        int expectedStatusCode = HttpStatus.SC_CONFLICT;
 
         GlobalParameters globalParameters = new GlobalParameters();
         String email = globalParameters.AUTHENTICATOR_USER;

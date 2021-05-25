@@ -107,7 +107,7 @@ public class UpdateUserTests extends TestBase {
 
     @Test
     public void shouldNotUpdateUserWithOtherUsersEmail(){
-        int expectedStatusCode = HttpStatus.SC_BAD_REQUEST;
+        int expectedStatusCode = HttpStatus.SC_CONFLICT;
 
         GlobalParameters globalParameters = new GlobalParameters();
 

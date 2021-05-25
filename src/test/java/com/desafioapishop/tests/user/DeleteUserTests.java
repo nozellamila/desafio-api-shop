@@ -52,7 +52,7 @@ public class DeleteUserTests extends TestBase {
     public void shouldNotExcludeUserWithCart(){
         UserSteps.insertUserCart(token);
 
-        int expectedStatusCode = HttpStatus.SC_BAD_REQUEST;
+        int expectedStatusCode = HttpStatus.SC_UNPROCESSABLE_ENTITY;
         String expectedMessage = "Não é possível excluir usuário com carrinho";
 
         GlobalParameters globalParameters = new GlobalParameters();

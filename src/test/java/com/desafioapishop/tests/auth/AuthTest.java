@@ -15,7 +15,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
 @Execution(ExecutionMode.CONCURRENT)
-public class AuthTests {
+public class AuthTest {
     @Test
     public void successfulAuthenticate(){
         int expectedStatusCode = HttpStatus.SC_OK;

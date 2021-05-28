@@ -1,12 +1,10 @@
 package com.desafioapishop.utils.steps;
 
 import com.desafioapishop.GlobalParameters;
-import com.desafioapishop.bases.TestBase;
 import com.desafioapishop.requests.cart.CartBody;
 import com.desafioapishop.requests.cart.CartRequest;
-import com.desafioapishop.requests.product.ProductCart;
+import com.desafioapishop.requests.product.ProductCartBody;
 import io.restassured.response.Response;
-import io.restassured.response.ValidatableResponse;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,11 +17,11 @@ public class UserSteps {
         new GlobalParameters();
         String userId = GlobalParameters.NONADMIN_USERID;
 
-        ProductCart productCart = new ProductCart();
-        List<ProductCart> productCarts = new ArrayList<>();
-        productCarts.add(productCart);
+        ProductCartBody productCartBody = new ProductCartBody();
+        List<ProductCartBody> productCartBodies = new ArrayList<>();
+        productCartBodies.add(productCartBody);
 
-        CartBody cartBody = new CartBody(productCarts, userId);
+        CartBody cartBody = new CartBody(productCartBodies, userId);
 
         boolean userHasCart = verifyUserHasCart(token, userId);
 

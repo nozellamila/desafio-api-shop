@@ -8,12 +8,12 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class ProductCart {
+public class ProductCartBody {
 
     private String productId;
     private String quantity;
 
-    public ProductCart(){
+    public ProductCartBody(){
         productId = "1";
         quantity = "2";
     }

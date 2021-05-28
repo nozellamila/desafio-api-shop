@@ -1,6 +1,6 @@
 package com.desafioapishop.requests.cart;
 
-import com.desafioapishop.requests.product.ProductCart;
+import com.desafioapishop.requests.product.ProductCartBody;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,6 +15,6 @@ import java.util.List;
 @NoArgsConstructor
 public class CartBody {
 
-    private List<ProductCart> products = new ArrayList<>();
+    private List<ProductCartBody> products = new ArrayList<>();
     private String userId;
 }

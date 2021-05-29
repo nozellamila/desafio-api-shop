@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: com.desafioapishop.tests.product.ProductTests
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.917 s - in com.desafioapishop.tests.product.ProductTests
+forbiddenListProduct  Time elapsed: 0.107 s
+excludeProduct  Time elapsed: 0.101 s
+invalidParametersUpdateProduct  Time elapsed: 0.109 s
+successfulRegisterProduct  Time elapsed: 0.119 s
+shouldNotExcludeProductForNonAdminUser  Time elapsed: 0.097 s
+listProductWithFilters  Time elapsed: 0.103 s
+forbiddenExcludeProduct  Time elapsed: 0.098 s
+shouldNotUpdateWithDuplicatedName  Time elapsed: 0.1 s
+forbiddenRegisterProduct  Time elapsed: 0.1 s
+invalidParametersRegisterProduct  Time elapsed: 0.108 s
+shouldNotRegisterDuplicatedName  Time elapsed: 0.099 s
+successfulUpdateProduct  Time elapsed: 0.098 s
+shouldNotFindProductToList  Time elapsed: 0.095 s
+shouldNotUpdateProductForNonAdminUser  Time elapsed: 0.094 s
+shouldNotExcludeProductBelongingToACart  Time elapsed: 0.098 s
+shouldNotExcludeNonExistentProduct  Time elapsed: 0.093 s
+listOneProduct  Time elapsed: 0.096 s
+shouldNotRegisterProductForNonAdminUser  Time elapsed: 0.095 s
+forbiddenUpdateProduct  Time elapsed: 0.101 s

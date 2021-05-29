@@ -16,7 +16,7 @@ C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafi
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\tests\product\ProductTests.java
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\requests\auth\AuthBody.java
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\utils\RestAssuredUtils.java
-C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\tests\auth\AuthTests.java
+C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\tests\auth\AuthTest.java
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\requests\product\ProductBody.java
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\tests\cart\CartTests.java
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\tests\user\DeleteUserTests.java

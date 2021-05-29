@@ -22,6 +22,7 @@ public class GlobalParameters {
     public static String NONADMIN_PASSWORD;
     public static String TOEXCLUDE_USERID;
     public static String TOREGISTERCART_USERID;
+    public static String TOREPEAT_PRODUCTNAME;
 
     private Properties properties;
 
@@ -42,19 +43,21 @@ public class GlobalParameters {
         REPORT_PATH = properties.getProperty("report.path");
         ENVIROMENT = properties.getProperty("enviroment");
 
+        AUTHENTICATOR_USER = properties.getProperty("properties.authenticator.user");
+        AUTHENTICATOR_PASSWORD = properties.getProperty("properties.authenticator.password");
+        NONADMIN_USERID = properties.getProperty("properties.nonadmin.userid");
+        NONADMIN_USER = properties.getProperty("properties.nonadmin.user");
+        NONADMIN_PASSWORD = properties.getProperty("properties.nonadmin.password");
+        TOEXCLUDE_USERID = properties.getProperty("properties.toexclude.userid");
+        TOREGISTERCART_USERID = properties.getProperty("properties.toregistercart.userid");
+        TOREPEAT_PRODUCTNAME = properties.getProperty("properties.torepeat.productname");
+
         if(ENVIROMENT.equals("hml")){
             DB_URL = properties.getProperty("hml.db.url");
             DB_NAME = properties.getProperty("hml.db.name");
             DB_USER = properties.getProperty("hml.db.user");
             DB_PASSWORD = properties.getProperty("hml.db.password");
             URL_DEFAULT = properties.getProperty("hml.url.default");
-            AUTHENTICATOR_USER = properties.getProperty("hml.authenticator.user");
-            AUTHENTICATOR_PASSWORD = properties.getProperty("hml.authenticator.password");
-            NONADMIN_USERID = properties.getProperty("hml.nonadmin.userid");
-            NONADMIN_USER = properties.getProperty("hml.nonadmin.user");
-            NONADMIN_PASSWORD = properties.getProperty("hml.nonadmin.password");
-            TOEXCLUDE_USERID = properties.getProperty("hml.toexclude.userid");
-            TOREGISTERCART_USERID = properties.getProperty("hml.toregistercart.userid");
         }
 
         if(ENVIROMENT.equals("dev")){
@@ -63,13 +66,6 @@ public class GlobalParameters {
             DB_USER = properties.getProperty("dev.db.user");
             DB_PASSWORD = properties.getProperty("dev.db.password");
             URL_DEFAULT = properties.getProperty("dev.url.default");
-            AUTHENTICATOR_USER = properties.getProperty("dev.authenticator.user");
-            AUTHENTICATOR_PASSWORD = properties.getProperty("dev.authenticator.password");
-            NONADMIN_USERID = properties.getProperty("dev.nonadmin.userid");
-            NONADMIN_USER = properties.getProperty("dev.nonadmin.user");
-            NONADMIN_PASSWORD = properties.getProperty("dev.nonadmin.password");
-            TOEXCLUDE_USERID = properties.getProperty("dev.toexclude.userid");
-            TOREGISTERCART_USERID = properties.getProperty("dev.toregistercart.userid");
         }
     }
 }

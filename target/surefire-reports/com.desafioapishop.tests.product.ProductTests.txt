@@ -1,23 +1,33 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.product.ProductTests
 -------------------------------------------------------------------------------
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.917 s - in com.desafioapishop.tests.product.ProductTests
-forbiddenListProduct  Time elapsed: 0.107 s
-excludeProduct  Time elapsed: 0.101 s
-invalidParametersUpdateProduct  Time elapsed: 0.109 s
-successfulRegisterProduct  Time elapsed: 0.119 s
-shouldNotExcludeProductForNonAdminUser  Time elapsed: 0.097 s
-listProductWithFilters  Time elapsed: 0.103 s
-forbiddenExcludeProduct  Time elapsed: 0.098 s
-shouldNotUpdateWithDuplicatedName  Time elapsed: 0.1 s
-forbiddenRegisterProduct  Time elapsed: 0.1 s
-invalidParametersRegisterProduct  Time elapsed: 0.108 s
-shouldNotRegisterDuplicatedName  Time elapsed: 0.099 s
-successfulUpdateProduct  Time elapsed: 0.098 s
-shouldNotFindProductToList  Time elapsed: 0.095 s
-shouldNotUpdateProductForNonAdminUser  Time elapsed: 0.094 s
-shouldNotExcludeProductBelongingToACart  Time elapsed: 0.098 s
-shouldNotExcludeNonExistentProduct  Time elapsed: 0.093 s
-listOneProduct  Time elapsed: 0.096 s
-shouldNotRegisterProductForNonAdminUser  Time elapsed: 0.095 s
-forbiddenUpdateProduct  Time elapsed: 0.101 s
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.808 s - in com.desafioapishop.tests.product.ProductTests
+excludeProduct  Time elapsed: 0.185 s
+invalidParametersUpdateProduct{String, Float, Integer, String}[1]  Time elapsed: 0.17 s
+invalidParametersUpdateProduct{String, Float, Integer, String}[2]  Time elapsed: 0.162 s
+invalidParametersUpdateProduct{String, Float, Integer, String}[3]  Time elapsed: 0.145 s
+invalidParametersUpdateProduct{String, Float, Integer, String}[4]  Time elapsed: 0.172 s
+successfulRegisterProduct  Time elapsed: 0.221 s
+shouldNotExcludeProductForNonAdminUser  Time elapsed: 0.265 s
+listProductWithFilters{String, String, String}[1]  Time elapsed: 0.154 s
+listProductWithFilters{String, String, String}[2]  Time elapsed: 0.132 s
+listProductWithFilters{String, String, String}[3]  Time elapsed: 0.116 s
+listProductWithFilters{String, String, String}[4]  Time elapsed: 0.122 s
+listProductWithFilters{String, String, String}[5]  Time elapsed: 0.116 s
+forbiddenExcludeProduct  Time elapsed: 0.131 s
+shouldNotUpdateWithDuplicatedName  Time elapsed: 0.154 s
+forbiddenRegisterProduct  Time elapsed: 0.161 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[1]  Time elapsed: 0.173 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[2]  Time elapsed: 0.169 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[3]  Time elapsed: 0.157 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[4]  Time elapsed: 0.175 s
+shouldNotRegisterDuplicatedName  Time elapsed: 0.185 s
+successfulUpdateProduct  Time elapsed: 0.162 s
+shouldNotRegisterProductForNonAdminProduct  Time elapsed: 0.255 s
+shouldNotUpdateProductForNonAdminProduct  Time elapsed: 0.269 s
+shouldNotFindProductToList{String, String, String, String, String}[1]  Time elapsed: 0.12 s
+shouldNotFindProductToList{String, String, String, String, String}[2]  Time elapsed: 0.116 s
+shouldNotFindProductToList{String, String, String, String, String}[3]  Time elapsed: 0.138 s
+shouldNotExcludeProductBelongingToACart  Time elapsed: 0.148 s
+shouldNotExcludeNonExistentProduct  Time elapsed: 0.131 s
+forbiddenUpdateProduct  Time elapsed: 0.122 s

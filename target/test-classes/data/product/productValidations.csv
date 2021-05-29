@@ -1,0 +1,4 @@
+"Product1",, 10,[Preço não pode ser nulo]
+"Product1",65,,[Quantidade não pode ser nula]
+"",65,10,[Nome não pode estar em branco ou ser nulo]
+,65,10,[Nome não pode estar em branco ou ser nulo]

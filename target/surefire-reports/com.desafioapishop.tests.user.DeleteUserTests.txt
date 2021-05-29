@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.user.DeleteUserTests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.744 s - in com.desafioapishop.tests.user.DeleteUserTests
-shouldNotExcludeNoRegisteredUser  Time elapsed: 0.141 s
-forbiddenExcludeUser  Time elapsed: 0.145 s
-invalidTokenExcludeUser  Time elapsed: 0.127 s
-excludeUser  Time elapsed: 0.148 s
-shouldNotExcludeUserWithCart  Time elapsed: 0.165 s
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.736 s - in com.desafioapishop.tests.user.DeleteUserTests
+shouldNotExcludeNoRegisteredUser  Time elapsed: 0.125 s
+forbiddenExcludeUser  Time elapsed: 0.154 s
+invalidTokenExcludeUser  Time elapsed: 0.15 s
+excludeUser  Time elapsed: 0.154 s
+shouldNotExcludeUserWithCart  Time elapsed: 0.153 s

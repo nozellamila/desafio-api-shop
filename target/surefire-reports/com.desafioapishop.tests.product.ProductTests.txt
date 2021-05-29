@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.product.ProductTests
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.454 s - in com.desafioapishop.tests.product.ProductTests
-listProductWithFilters{String, String, String}[4]  Time elapsed: 0.175 s
-invalidParametersRegisterProduct{String, Float, Integer, String}[3]  Time elapsed: 0.176 s
-listProductWithFilters{String, String, String}[3]  Time elapsed: 0.176 s
-listProductWithFilters{String, String, String}[5]  Time elapsed: 0.176 s
-invalidParametersRegisterProduct{String, Float, Integer, String}[4]  Time elapsed: 0.212 s
-shouldNotRegisterProductForNonAdminProduct  Time elapsed: 0.219 s
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.749 s - in com.desafioapishop.tests.product.ProductTests

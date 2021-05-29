@@ -1,25 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.user.ListUserTests
 -------------------------------------------------------------------------------
-Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.267 s - in com.desafioapishop.tests.user.ListUserTests
-invalidParametersUpdateProduct{String, Float, Integer, String}[1]  Time elapsed: 0.005 s
-shouldNotFindProductToList{String, String, String, String, String}[3]  Time elapsed: 0.08 s
-forbiddenExcludeProduct  Time elapsed: 0.135 s
-forbiddenRegisterProduct  Time elapsed: 0.169 s
-shouldNotExcludeProductForNonAdminUser  Time elapsed: 0.169 s
-listProductWithFilters{String, String, String}[1]  Time elapsed: 0.009 s
-invalidParametersUpdateProduct{String, Float, Integer, String}[2]  Time elapsed: 0.017 s
-forbiddenListUser  Time elapsed: 0.05 s
-shouldNotFindUserToList{String, String, String}[3]  Time elapsed: 0 s
-listOneUser  Time elapsed: 0.005 s
-shouldNotUpdateWithDuplicatedName  Time elapsed: 0.001 s
-successfulUpdateProduct  Time elapsed: 0.164 s
-invalidParametersRegisterProduct{String, Float, Integer, String}[1]  Time elapsed: 0 s
-invalidParametersUpdateProduct{String, Float, Integer, String}[3]  Time elapsed: 0.006 s
-listProductWithFilters{String, String, String}[2]  Time elapsed: 0.046 s
-shouldNotRegisterDuplicatedName  Time elapsed: 0.006 s
-shouldNotFindUserToList{String, String, String}[4]  Time elapsed: 0.047 s
-shouldNotUpdateProductForNonAdminProduct  Time elapsed: 0.029 s
-invalidParametersRegisterProduct{String, Float, Integer, String}[2]  Time elapsed: 0.013 s
-invalidParametersUpdateProduct{String, Float, Integer, String}[4]  Time elapsed: 0.01 s
-shouldNotFindUserToList{String, String, String}[5]  Time elapsed: 0.017 s
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.831 s - in com.desafioapishop.tests.user.ListUserTests
+invalidParametersRegisterUser{String, String, String, String}[6]  Time elapsed: 0.241 s
+shouldNotFindUserToList{String, String, String}[4]  Time elapsed: 0.279 s
+shouldNotFindUserToList{String, String, String}[5]  Time elapsed: 0.327 s

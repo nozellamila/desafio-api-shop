@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: com.desafioapishop.tests.product.DeleteProductTests
+-------------------------------------------------------------------------------
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.367 s - in com.desafioapishop.tests.product.DeleteProductTests
+invalidParametersRegisterProduct{String, Float, Integer, String}[2]  Time elapsed: 0 s
+listProductWithFilters{String, String, String}[1]  Time elapsed: 0 s
+invalidParametersRegisterUser{String, String, String, String}[7]  Time elapsed: 0 s
+shouldNotRegisterCartWithNonExistingProduct  Time elapsed: 0 s
+shouldNotUpdateWithDuplicatedName  Time elapsed: 0 s
+listProductWithFilters{String, String, String}[2]  Time elapsed: 0 s
+listCartWithFilters  Time elapsed: 0.029 s
+forbiddenUserUpdate  Time elapsed: 0.012 s
+shouldNotExcludeProductForNonAdminUser  Time elapsed: 0.016 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[3]  Time elapsed: 0.066 s
+invalidParametersUserUpdate{String, String, String, String}[2]  Time elapsed: 0 s
+listProductWithFilters{String, String, String}[3]  Time elapsed: 0.063 s
+invalidParametersRegisterUser{String, String, String, String}[1]  Time elapsed: 0 s
+invalidParametersUserUpdate{String, String, String, String}[1]  Time elapsed: 0.008 s
+forbiddenRegisterCart  Time elapsed: 0.157 s
+invalidParametersUserUpdate{String, String, String, String}[3]  Time elapsed: 0 s
+listUsersWithFilters{String, String, String}[2]  Time elapsed: 0.073 s
+invalidParametersUserUpdate{String, String, String, String}[4]  Time elapsed: 0.199 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[4]  Time elapsed: 0.006 s
+listOneUser  Time elapsed: 0.004 s
+invalidParametersRegisterUser{String, String, String, String}[2]  Time elapsed: 0.178 s
+excludeProduct  Time elapsed: 0.056 s

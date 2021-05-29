@@ -1,22 +1,5 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.user.RegisterUserTests
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.062 s - in com.desafioapishop.tests.user.RegisterUserTests
-shouldNotRegisterCartWithNonExistingProduct  Time elapsed: 0 s
-shouldNotUpdateUserWithOtherUsersEmail  Time elapsed: 0.031 s
-listUsersWithFilters{String, String, String}[3]  Time elapsed: 0.038 s
-shouldNotExcludeProductBelongingToACart  Time elapsed: 0.101 s
-shouldNotRegisterCartForUserWithAlreadyExistingCart  Time elapsed: 0.119 s
-invalidParametersUserUpdate{String, String, String, String}[2]  Time elapsed: 0.016 s
-invalidParametersRegisterUser{String, String, String, String}[4]  Time elapsed: 0.02 s
-listCartWithFilters  Time elapsed: 0.094 s
-successfulRegisterUser  Time elapsed: 0.024 s
-invalidTokenListUser  Time elapsed: 0.022 s
-shouldNotCancelBuyForUserWithNoCart  Time elapsed: 0.023 s
-invalidParametersUserUpdate{String, String, String, String}[1]  Time elapsed: 0.01 s
-invalidParametersUserUpdate{String, String, String, String}[3]  Time elapsed: 0.084 s
-shouldNotFindProductToList{String, String, String, String, String}[1]  Time elapsed: 0.006 s
-invalidParametersRegisterUser{String, String, String, String}[5]  Time elapsed: 0.064 s
-forbiddenRegisterCart  Time elapsed: 0.07 s
-listOneCart  Time elapsed: 0.006 s
-invalidParametersRegisterUser{String, String, String, String}[6]  Time elapsed: 0.029 s
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.998 s - in com.desafioapishop.tests.user.RegisterUserTests
+successfulRegisterUser  Time elapsed: 0.493 s

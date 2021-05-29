@@ -1,15 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.user.UpdateUserTests
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.394 s - in com.desafioapishop.tests.user.UpdateUserTests
-forbiddenUserUpdate  Time elapsed: 0.131 s
-invalidParametersUserUpdate{String, String, String, String}[1]  Time elapsed: 0.127 s
-invalidParametersUserUpdate{String, String, String, String}[2]  Time elapsed: 0.113 s
-invalidParametersUserUpdate{String, String, String, String}[3]  Time elapsed: 0.121 s
-invalidParametersUserUpdate{String, String, String, String}[4]  Time elapsed: 0.111 s
-invalidParametersUserUpdate{String, String, String, String}[5]  Time elapsed: 0.1 s
-invalidParametersUserUpdate{String, String, String, String}[6]  Time elapsed: 0.116 s
-invalidParametersUserUpdate{String, String, String, String}[7]  Time elapsed: 0.1 s
-shouldNotUpdateUserWithOtherUsersEmail  Time elapsed: 0.132 s
-successfulUserUpdate  Time elapsed: 0.216 s
-invalidTokenUserUpdate  Time elapsed: 0.116 s
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.465 s - in com.desafioapishop.tests.user.UpdateUserTests
+invalidParametersUserUpdate{String, String, String, String}[5]  Time elapsed: 0.06 s
+invalidParametersUserUpdate{String, String, String, String}[7]  Time elapsed: 0.062 s
+invalidParametersUserUpdate{String, String, String, String}[4]  Time elapsed: 0.028 s
+shouldNotFindProductToList{String, String, String, String, String}[2]  Time elapsed: 0.012 s
+invalidParametersUserUpdate{String, String, String, String}[6]  Time elapsed: 0.02 s
+shouldNotFindUserToList{String, String, String}[2]  Time elapsed: 0.03 s
+successfulRegisterProduct  Time elapsed: 0.042 s

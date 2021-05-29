@@ -1,13 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.user.RegisterUserTests
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.373 s - in com.desafioapishop.tests.user.RegisterUserTests
-shouldNotRegisterUserWithOtherUsersEmail  Time elapsed: 0.118 s
-successfulRegisterUser  Time elapsed: 0.269 s
-invalidParametersRegisterUser{String, String, String, String}[1]  Time elapsed: 0.136 s
-invalidParametersRegisterUser{String, String, String, String}[2]  Time elapsed: 0.131 s
-invalidParametersRegisterUser{String, String, String, String}[3]  Time elapsed: 0.149 s
-invalidParametersRegisterUser{String, String, String, String}[4]  Time elapsed: 0.137 s
-invalidParametersRegisterUser{String, String, String, String}[5]  Time elapsed: 0.146 s
-invalidParametersRegisterUser{String, String, String, String}[6]  Time elapsed: 0.132 s
-invalidParametersRegisterUser{String, String, String, String}[7]  Time elapsed: 0.122 s
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.062 s - in com.desafioapishop.tests.user.RegisterUserTests
+shouldNotRegisterCartWithNonExistingProduct  Time elapsed: 0 s
+shouldNotUpdateUserWithOtherUsersEmail  Time elapsed: 0.031 s
+listUsersWithFilters{String, String, String}[3]  Time elapsed: 0.038 s
+shouldNotExcludeProductBelongingToACart  Time elapsed: 0.101 s
+shouldNotRegisterCartForUserWithAlreadyExistingCart  Time elapsed: 0.119 s
+invalidParametersUserUpdate{String, String, String, String}[2]  Time elapsed: 0.016 s
+invalidParametersRegisterUser{String, String, String, String}[4]  Time elapsed: 0.02 s
+listCartWithFilters  Time elapsed: 0.094 s
+successfulRegisterUser  Time elapsed: 0.024 s
+invalidTokenListUser  Time elapsed: 0.022 s
+shouldNotCancelBuyForUserWithNoCart  Time elapsed: 0.023 s
+invalidParametersUserUpdate{String, String, String, String}[1]  Time elapsed: 0.01 s
+invalidParametersUserUpdate{String, String, String, String}[3]  Time elapsed: 0.084 s
+shouldNotFindProductToList{String, String, String, String, String}[1]  Time elapsed: 0.006 s
+invalidParametersRegisterUser{String, String, String, String}[5]  Time elapsed: 0.064 s
+forbiddenRegisterCart  Time elapsed: 0.07 s
+listOneCart  Time elapsed: 0.006 s
+invalidParametersRegisterUser{String, String, String, String}[6]  Time elapsed: 0.029 s

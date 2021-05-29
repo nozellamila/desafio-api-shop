@@ -1,9 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.user.DeleteUserTests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.736 s - in com.desafioapishop.tests.user.DeleteUserTests
-shouldNotExcludeNoRegisteredUser  Time elapsed: 0.125 s
-forbiddenExcludeUser  Time elapsed: 0.154 s
-invalidTokenExcludeUser  Time elapsed: 0.15 s
-excludeUser  Time elapsed: 0.154 s
-shouldNotExcludeUserWithCart  Time elapsed: 0.153 s
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.252 s - in com.desafioapishop.tests.user.DeleteUserTests
+shouldNotExcludeNonExistentProduct  Time elapsed: 0.022 s
+invalidParametersRegisterUser{String, String, String, String}[1]  Time elapsed: 0.022 s
+forbiddenExcludeUser  Time elapsed: 0.07 s
+forbiddenFinishBuy  Time elapsed: 0.037 s
+successfulUserUpdate  Time elapsed: 0.079 s
+shouldNotRegisterUserWithOtherUsersEmail  Time elapsed: 0.026 s
+invalidParametersRegisterUser{String, String, String, String}[2]  Time elapsed: 0.056 s
+listUsersWithFilters{String, String, String}[2]  Time elapsed: 0.056 s
+forbiddenCancelBuy  Time elapsed: 0 s
+invalidTokenExcludeUser  Time elapsed: 0.032 s
+shouldNotRegisterCartWithInvalidParameters  Time elapsed: 0.132 s
+forbiddenUserUpdate  Time elapsed: 0.016 s
+successfulRegisterCart  Time elapsed: 0.058 s
+invalidParametersRegisterUser{String, String, String, String}[3]  Time elapsed: 0.035 s
+excludeUser  Time elapsed: 0.043 s

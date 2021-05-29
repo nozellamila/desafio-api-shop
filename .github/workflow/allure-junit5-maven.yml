@@ -21,7 +21,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
-          java-version: 8
+          java-version: 15
 
       - name: Install dependencies
         run: mvn dependency:go-offline compile compiler:testCompile

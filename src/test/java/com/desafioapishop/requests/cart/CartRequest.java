@@ -22,24 +22,24 @@ public class CartRequest extends RequestBase {
         method = Method.POST;
     }
 
-    public void setFinishCartRequest(String token, String cartId){
+    public void setFinishCartRequest(String token, String userId){
         headers.put("Authorization", token);
         method = Method.DELETE;
         requestService = "/carts/finish-buy";
-        jsonBody = "{ userId: " + cartId + "}";
+        jsonBody = "{\"userId\": " + userId +"}";
     }
 
-    public void setCancelCartRequest(String token, String cartId){
+    public void setCancelCartRequest(String token, String userId){
         headers.put("Authorization", token);
         method = Method.DELETE;
         requestService = "/carts/cancel-buy";
-        jsonBody = "{ userId: " + cartId + "}";
+        jsonBody = "{\"userId\": " + userId +"}";
     }
 
-    public void setGetOneCartRequest(String token, Integer cartId){
+    public void setGetOneCartRequest(String token, String cartId){
         headers.put("Authorization", token);
         method = Method.GET;
-        requestService = "/carts/" + cartId.toString();
+        requestService = "/carts/" + cartId;
     }
 
     public void setGetCartWithParamsRequest(String token, Map<String, String> requestParameters){

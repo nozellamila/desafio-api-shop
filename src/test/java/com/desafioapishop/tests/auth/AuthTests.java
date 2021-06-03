@@ -1,5 +1,6 @@
 package com.desafioapishop.tests.auth;
 
+import com.desafioapishop.bases.TestBase;
 import com.desafioapishop.requests.auth.AuthBody;
 import com.desafioapishop.requests.auth.AuthRequest;
 import static org.hamcrest.Matchers.*;
@@ -8,14 +9,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.parallel.Execution;
-import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-@Execution(ExecutionMode.CONCURRENT)
-public class AuthTests {
+@DisplayName(value = "Testes de autenticação")
+public class AuthTests extends TestBase {
     @Test
     public void successfulAuthenticate(){
         int expectedStatusCode = HttpStatus.SC_OK;
@@ -27,7 +27,6 @@ public class AuthTests {
 
         response.statusCode(expectedStatusCode);
         response.body("type", equalTo(type));
-
     }
 
     @Test

@@ -12,7 +12,6 @@ com\desafioapishop\requests\product\ProductRequest.class
 com\desafioapishop\tests\auth\AuthTests.class
 com\desafioapishop\tests\user\ListUserTests.class
 com\desafioapishop\requests\product\ProductBody.class
-com\desafioapishop\tests\cart\CartTests.class
 com\desafioapishop\utils\RestAssuredUtils.class
 com\desafioapishop\utils\DBUtils.class
 com\desafioapishop\tests\product\ListProductTests.class

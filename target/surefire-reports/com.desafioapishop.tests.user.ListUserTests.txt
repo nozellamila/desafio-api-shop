@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.desafioapishop.tests.user.ListUserTests
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.831 s - in com.desafioapishop.tests.user.ListUserTests
-invalidParametersRegisterUser{String, String, String, String}[6]  Time elapsed: 0.241 s
-shouldNotFindUserToList{String, String, String}[4]  Time elapsed: 0.279 s
-shouldNotFindUserToList{String, String, String}[5]  Time elapsed: 0.327 s

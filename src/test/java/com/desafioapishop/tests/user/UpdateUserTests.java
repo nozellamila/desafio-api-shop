@@ -9,6 +9,7 @@ import com.desafioapishop.utils.AuthUtils;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
@@ -21,7 +22,7 @@ import java.util.List;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@Execution(ExecutionMode.CONCURRENT)
+@DisplayName(value = "Testes de atualização de usuário")
 public class UpdateUserTests extends TestBase {
 
     @Test

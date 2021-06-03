@@ -4,12 +4,16 @@ import com.desafioapishop.GlobalParameters;
 import com.desafioapishop.requests.cart.CartBody;
 import com.desafioapishop.requests.cart.CartRequest;
 import com.desafioapishop.requests.product.ProductCartBody;
+import com.desafioapishop.requests.user.UserBody;
+import com.desafioapishop.requests.user.UserRequest;
+import com.desafioapishop.utils.DBUtils;
 import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
+import org.apache.http.HttpStatus;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+
+import static org.hamcrest.Matchers.equalTo;
 
 public class UserSteps {
 
@@ -28,6 +32,19 @@ public class UserSteps {
         if(!userHasCart){
             CartRequest cartRequest = new CartRequest();
             cartRequest.setPostCartRequest(token, cartBody);
+            cartRequest.executeRequestNoLog();
+        }
+    }
+
+    public static void cancelUserCart(String token){
+        new GlobalParameters();
+        String userId = GlobalParameters.NONADMIN_USERID;
+
+        boolean userHasCart = verifyUserHasCart(token, userId);
+
+        if(userHasCart){
+            CartRequest cartRequest = new CartRequest();
+            cartRequest.setCancelCartRequest(token, userId);
             cartRequest.executeRequestNoLog();
         }
     }

@@ -21,11 +21,11 @@ public class ProductRequest extends RequestBase {
         method = Method.POST;
     }
 
-    public void setPutProductRequest(String token, ProductBody productBody, Integer productId){
+    public void setPutProductRequest(String token, ProductBody productBody, String productId){
         headers.put("Authorization", token);
         jsonBody = productBody;
         method = Method.PUT;
-        requestService = "/products/" + productId.toString();
+        requestService = "/products/" + productId;
     }
 
     public void setDeleteProductRequest(String token, String productId){

@@ -4,6 +4,7 @@ import com.desafioapishop.bases.TestBase;
 import com.desafioapishop.requests.product.ProductRequest;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -14,7 +15,7 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@Execution(ExecutionMode.CONCURRENT)
+@DisplayName(value = "Testes de busca de produto")
 public class ListProductTests extends TestBase {
 
     @ParameterizedTest(name = "{index} => parameterKey={0}, parameterValue={1}, expectedReturn={2} ")

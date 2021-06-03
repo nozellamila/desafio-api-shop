@@ -11,10 +11,14 @@ import java.util.List;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
 public class CartBody {
 
     private List<ProductCartBody> products = new ArrayList<>();
     private String userId;
+
+    public CartBody(List<ProductCartBody> products, String userId){
+        this.products = products;
+        this.userId = userId;
+    }
 }

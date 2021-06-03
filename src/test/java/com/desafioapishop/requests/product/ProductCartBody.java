@@ -7,7 +7,6 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
 public class ProductCartBody {
 
     private String productId;
@@ -16,5 +15,10 @@ public class ProductCartBody {
     public ProductCartBody(){
         productId = "1";
         quantity = "2";
+    }
+
+    public ProductCartBody(String productId, String quantity){
+        this.productId = productId;
+        this.quantity = quantity;
     }
 }

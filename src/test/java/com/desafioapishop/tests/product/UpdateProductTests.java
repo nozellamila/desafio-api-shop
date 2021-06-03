@@ -9,6 +9,7 @@ import com.desafioapishop.utils.AuthUtils;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
@@ -20,7 +21,7 @@ import java.util.Random;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@Execution(ExecutionMode.CONCURRENT)
+@DisplayName(value = "Testes de atualização de produto")
 public class UpdateProductTests extends TestBase {
 
     @Test
@@ -38,7 +39,7 @@ public class UpdateProductTests extends TestBase {
 
         ProductRequest productRequest = new ProductRequest();
         ProductBody productBody = new ProductBody(name, price, description, quantity);
-        productRequest.setPutProductRequest(token, productBody, 1);
+        productRequest.setPutProductRequest(token, productBody, "1");
 
         ValidatableResponse response = productRequest.executeRequest();
         response.statusCode(expectedStatusCode);
@@ -58,7 +59,7 @@ public class UpdateProductTests extends TestBase {
 
         ProductRequest productRequest = new ProductRequest();
         ProductBody productBody = new ProductBody(name, price, description, quantity);
-        productRequest.setPutProductRequest(token, productBody, 2);
+        productRequest.setPutProductRequest(token, productBody, "2");
 
         ValidatableResponse response = productRequest.executeRequest();
         response.statusCode(expectedStatusCode);
@@ -73,7 +74,7 @@ public class UpdateProductTests extends TestBase {
 
         ProductRequest productRequest = new ProductRequest();
         ProductBody productBody = new ProductBody(name, price, description, quantity);
-        productRequest.setPutProductRequest(token, productBody, 1);
+        productRequest.setPutProductRequest(token, productBody, "1");
 
         Response response = productRequest.executeRequestNoLog();
 
@@ -98,7 +99,7 @@ public class UpdateProductTests extends TestBase {
 
         ProductRequest productRequest = new ProductRequest();
         ProductBody productBody = new ProductBody(name, price, description, quantity);
-        productRequest.setPutProductRequest(token, productBody, 2);
+        productRequest.setPutProductRequest(token, productBody, "2");
 
         ValidatableResponse response = productRequest.executeRequest();
         response.statusCode(expectedStatusCode);
@@ -118,7 +119,7 @@ public class UpdateProductTests extends TestBase {
 
         ProductRequest ProductRequest = new ProductRequest();
         ProductBody productBody = new ProductBody(name, price, description, quantity);
-        ProductRequest.setPutProductRequest(token, productBody, 1);
+        ProductRequest.setPutProductRequest(token, productBody, "1");
 
         ValidatableResponse response = ProductRequest.executeRequest();
         response.statusCode(expectedStatusCode);

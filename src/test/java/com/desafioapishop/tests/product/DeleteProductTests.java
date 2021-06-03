@@ -9,6 +9,7 @@ import com.desafioapishop.utils.DBUtils;
 import com.desafioapishop.utils.steps.UserSteps;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
@@ -17,7 +18,7 @@ import java.util.List;
 
 import static org.hamcrest.Matchers.equalTo;
 
-@Execution(ExecutionMode.CONCURRENT)
+@DisplayName(value = "Testes de exclusão de produto")
 public class DeleteProductTests extends TestBase {
 
     @Test
@@ -26,8 +27,6 @@ public class DeleteProductTests extends TestBase {
         String expectedMessage = "Produto excluído com sucesso";
 
         List<String> productId = DBUtils.getQueryResult("FindProductToExclude.sql");
-
-        new GlobalParameters();
 
         ProductRequest productRequest = new ProductRequest();
         productRequest.setDeleteProductRequest(token, productId.get(0));
@@ -86,6 +85,8 @@ public class DeleteProductTests extends TestBase {
         ValidatableResponse response = productRequest.executeRequest();
         response.statusCode(expectedStatusCode);
         response.body("message", equalTo(expectedMessage));
+
+        UserSteps.cancelUserCart(token);
     }
 
     @Test

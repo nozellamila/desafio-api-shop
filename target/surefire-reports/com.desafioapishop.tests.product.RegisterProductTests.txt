@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.desafioapishop.tests.product.RegisterProductTests
--------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.086 s - in com.desafioapishop.tests.product.RegisterProductTests
-shouldNotFindUserToList{String, String, String}[1]  Time elapsed: 0 s
-invalidParametersUpdateProduct{String, Float, Integer, String}[2]  Time elapsed: 0 s
-invalidParametersUserUpdate{String, String, String, String}[7]  Time elapsed: 0.104 s
-successfulRegisterProduct  Time elapsed: 0.026 s

@@ -3,12 +3,16 @@ package com.desafioapishop.tests.user;
 import com.desafioapishop.GlobalParameters;
 import com.desafioapishop.bases.TestBase;
 import com.desafioapishop.requests.auth.AuthBody;
+import com.desafioapishop.requests.cart.CartBody;
+import com.desafioapishop.requests.cart.CartRequest;
+import com.desafioapishop.requests.product.ProductCartBody;
 import com.desafioapishop.requests.user.UserRequest;
 import com.desafioapishop.utils.AuthUtils;
 import com.desafioapishop.utils.DBUtils;
 import com.desafioapishop.utils.steps.UserSteps;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
@@ -18,7 +22,7 @@ import java.util.List;
 
 import static org.hamcrest.Matchers.*;
 
-@Execution(ExecutionMode.CONCURRENT)
+@DisplayName(value = "Testes de exclusão de usuário")
 public class DeleteUserTests extends TestBase {
 
     @Test
@@ -68,6 +72,8 @@ public class DeleteUserTests extends TestBase {
         ValidatableResponse response = userRequest.executeRequest();
         response.statusCode(expectedStatusCode);
         response.body("message", equalTo(expectedMessage));
+
+        UserSteps.cancelUserCart(token);
     }
 
     @Test

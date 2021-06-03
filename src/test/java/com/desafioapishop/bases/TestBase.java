@@ -3,7 +3,6 @@ package com.desafioapishop.bases;
 import com.desafioapishop.requests.auth.AuthBody;
 import com.desafioapishop.utils.AuthUtils;
 import com.desafioapishop.utils.DBUtils;
-import com.desafioapishop.utils.steps.UserSteps;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 

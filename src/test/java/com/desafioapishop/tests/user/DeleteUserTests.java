@@ -3,21 +3,14 @@ package com.desafioapishop.tests.user;
 import com.desafioapishop.GlobalParameters;
 import com.desafioapishop.bases.TestBase;
 import com.desafioapishop.requests.auth.AuthBody;
-import com.desafioapishop.requests.cart.CartBody;
-import com.desafioapishop.requests.cart.CartRequest;
-import com.desafioapishop.requests.product.ProductCartBody;
 import com.desafioapishop.requests.user.UserRequest;
 import com.desafioapishop.utils.AuthUtils;
 import com.desafioapishop.utils.DBUtils;
-import com.desafioapishop.utils.steps.UserSteps;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.parallel.Execution;
-import org.junit.jupiter.api.parallel.ExecutionMode;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.hamcrest.Matchers.*;
@@ -30,10 +23,10 @@ public class DeleteUserTests extends TestBase {
         int expectedStatusCode = HttpStatus.SC_OK;
         String message = "Usuário excluído com sucesso";
 
-        List<String> userId = DBUtils.getQueryResult("FindUserToExclude.sql");
+        String userId = "5";
 
         UserRequest userRequest = new UserRequest();
-        userRequest.setDeleteUserRequest(token, userId.get(0));
+        userRequest.setDeleteUserRequest(token, userId);
 
         ValidatableResponse response = userRequest.executeRequest();
         response.statusCode(expectedStatusCode);
@@ -57,14 +50,12 @@ public class DeleteUserTests extends TestBase {
 
     @Test
     public void shouldNotExcludeUserWithCart(){
-        UserSteps.insertUserCart(token);
-
         int expectedStatusCode = HttpStatus.SC_UNPROCESSABLE_ENTITY;
         String expectedMessage = "Não é possível excluir usuário com carrinho";
 
         GlobalParameters globalParameters = new GlobalParameters();
 
-        String userId = globalParameters.NONADMIN_USERID;
+        String userId = globalParameters.TOREGISTERCART_USERID;
 
         UserRequest userRequest = new UserRequest();
         userRequest.setDeleteUserRequest(token, userId);
@@ -72,8 +63,6 @@ public class DeleteUserTests extends TestBase {
         ValidatableResponse response = userRequest.executeRequest();
         response.statusCode(expectedStatusCode);
         response.body("message", equalTo(expectedMessage));
-
-        UserSteps.cancelUserCart(token);
     }
 
     @Test

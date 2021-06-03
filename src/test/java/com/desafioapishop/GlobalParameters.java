@@ -20,10 +20,10 @@ public class GlobalParameters {
     public static String NONADMIN_USERID;
     public static String NONADMIN_USER;
     public static String NONADMIN_PASSWORD;
+    public static String TOREGISTERCART_USERID;
+    public static String TOCANCELCART_USERID;
     public static String TOEXCLUDE_USERID;
     public static String TOEXCLUDE_USER;
-    public static String TOREGISTERCART_USERID;
-    public static String TOREGISTERCART_USER;
     public static String TOREPEAT_PRODUCTNAME;
 
     private Properties properties;
@@ -50,10 +50,10 @@ public class GlobalParameters {
         NONADMIN_USERID = properties.getProperty("properties.nonadmin.userid");
         NONADMIN_USER = properties.getProperty("properties.nonadmin.user");
         NONADMIN_PASSWORD = properties.getProperty("properties.nonadmin.password");
+        TOCANCELCART_USERID = properties.getProperty("properties.tocancelcart.userid");
+        TOREGISTERCART_USERID = properties.getProperty("properties.toregistercart.userid");
         TOEXCLUDE_USERID = properties.getProperty("properties.toexclude.userid");
         TOEXCLUDE_USER = properties.getProperty("properties.toexclude.user");
-        TOREGISTERCART_USERID = properties.getProperty("properties.toregistercart.userid");
-        TOREGISTERCART_USER = properties.getProperty("properties.toregistercart.user");
         TOREPEAT_PRODUCTNAME = properties.getProperty("properties.torepeat.productname");
 
         if(ENVIROMENT.equals("hml")){

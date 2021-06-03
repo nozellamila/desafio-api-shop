@@ -1,5 +1,4 @@
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\utils\GeneralUtils.java
-C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\utils\steps\ProductSteps.java
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\tests\cart\RegisterCartTests.java
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\tests\cart\ListCartTests.java
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\requests\cart\CartBody.java
@@ -12,9 +11,7 @@ C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafi
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\requests\product\ProductBody.java
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\tests\product\RegisterProductTests.java
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\tests\cart\FinishOrCancelCartTests.java
-C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\utils\steps\CartSteps.java
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\requests\cart\CartRequest.java
-C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\utils\steps\UserSteps.java
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\requests\auth\AuthRequest.java
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\tests\user\RegisterUserTests.java
 C:\Users\196615\Documents\DesafioBase2\desafio-api-shop\src\test\java\com\desafioapishop\utils\AuthUtils.java

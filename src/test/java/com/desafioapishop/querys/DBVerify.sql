@@ -1,1 +1,0 @@
-SELECT * FROM USER WHERE email = '$email'

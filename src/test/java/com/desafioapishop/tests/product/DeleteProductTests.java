@@ -6,13 +6,10 @@ import com.desafioapishop.requests.auth.AuthBody;
 import com.desafioapishop.requests.product.ProductRequest;
 import com.desafioapishop.utils.AuthUtils;
 import com.desafioapishop.utils.DBUtils;
-import com.desafioapishop.utils.steps.UserSteps;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.parallel.Execution;
-import org.junit.jupiter.api.parallel.ExecutionMode;
 
 import java.util.List;
 
@@ -26,10 +23,8 @@ public class DeleteProductTests extends TestBase {
         int expectedStatusCode = HttpStatus.SC_OK;
         String expectedMessage = "Produto excluído com sucesso";
 
-        List<String> productId = DBUtils.getQueryResult("FindProductToExclude.sql");
-
         ProductRequest productRequest = new ProductRequest();
-        productRequest.setDeleteProductRequest(token, productId.get(0));
+        productRequest.setDeleteProductRequest(token, "5");
 
         ValidatableResponse response = productRequest.executeRequest();
         response.statusCode(expectedStatusCode);
@@ -55,9 +50,9 @@ public class DeleteProductTests extends TestBase {
     public void shouldNotExcludeProductForNonAdminUser(){
         int expectedStatusCode = HttpStatus.SC_FORBIDDEN;
 
-        new GlobalParameters();
+        GlobalParameters globalParameters = new GlobalParameters();
 
-        AuthBody authBody = new AuthBody(GlobalParameters.NONADMIN_USER, GlobalParameters.NONADMIN_PASSWORD);
+        AuthBody authBody = new AuthBody(globalParameters.NONADMIN_USER, globalParameters.NONADMIN_PASSWORD);
         AuthUtils authUtils = new AuthUtils();
         token = authUtils.generateToken(authBody);
 
@@ -70,14 +65,12 @@ public class DeleteProductTests extends TestBase {
 
     @Test
     public void shouldNotExcludeProductBelongingToACart(){
-        UserSteps.insertUserCart(token);
-
         int expectedStatusCode = HttpStatus.SC_UNPROCESSABLE_ENTITY;
         String expectedMessage = "Não é possível excluir produto pertencente a algum carrinho";
 
         new GlobalParameters();
 
-        String productId = "1";
+        String productId = "2";
 
         ProductRequest productRequest = new ProductRequest();
         productRequest.setDeleteProductRequest(token, productId);
@@ -85,8 +78,6 @@ public class DeleteProductTests extends TestBase {
         ValidatableResponse response = productRequest.executeRequest();
         response.statusCode(expectedStatusCode);
         response.body("message", equalTo(expectedMessage));
-
-        UserSteps.cancelUserCart(token);
     }
 
     @Test
@@ -96,7 +87,7 @@ public class DeleteProductTests extends TestBase {
         token = "";
 
         ProductRequest ProductRequest = new ProductRequest();
-        ProductRequest.setDeleteProductRequest(token, "1");
+        ProductRequest.setDeleteProductRequest(token, "2");
 
         ValidatableResponse response = ProductRequest.executeRequest();
         response.statusCode(expectedStatusCode);

@@ -5,8 +5,6 @@ import com.desafioapishop.bases.TestBase;
 import com.desafioapishop.requests.cart.CartBody;
 import com.desafioapishop.requests.cart.CartRequest;
 import com.desafioapishop.requests.product.ProductCartBody;
-import com.desafioapishop.utils.steps.CartSteps;
-import com.desafioapishop.utils.steps.UserSteps;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
@@ -36,10 +34,7 @@ public class RegisterCartTests extends TestBase {
         Pattern pattern = Pattern.compile(patternStr);
 
         GlobalParameters globalParameters = new GlobalParameters();
-        String userId = globalParameters.TOREGISTERCART_USERID;
-
-        if(CartSteps.cartExists(token, userId))
-            CartSteps.cancelBuy(token, userId);
+        String userId = globalParameters.NONADMIN_USERID;
 
         List<ProductCartBody> productCartBodyList = new ArrayList<>();
         productCartBodyList.add(new ProductCartBody());
@@ -55,19 +50,17 @@ public class RegisterCartTests extends TestBase {
         Matcher matcher = pattern.matcher(response.extract().path("date").toString());
         assertTrue(matcher.matches());
 
-        CartSteps.cancelBuy(token, userId);
     }
 
     @Test
     public void shouldNotRegisterCartForUserWithAlreadyExistingCart(){
-        UserSteps.insertUserCart(token);
 
         int expectedStatusCode = HttpStatus.SC_UNPROCESSABLE_ENTITY;
         String expectedMessage = "Não é possível cadastrar dois carrinhos para o mesmo usuário";
 
         GlobalParameters globalParameters = new GlobalParameters();
 
-        String userId = globalParameters.NONADMIN_USERID;
+        String userId = globalParameters.TOREGISTERCART_USERID;
         List<ProductCartBody> productCartBodyList = new ArrayList<>();
         productCartBodyList.add(new ProductCartBody());
 
@@ -80,7 +73,6 @@ public class RegisterCartTests extends TestBase {
         response.statusCode(expectedStatusCode);
         response.body("message", equalTo(expectedMessage));
 
-        UserSteps.cancelUserCart(token);
     }
 
     @Test
@@ -89,7 +81,7 @@ public class RegisterCartTests extends TestBase {
         int expectedStatusCode = HttpStatus.SC_NOT_FOUND;
         String expectedMessage = "Produto não existe";
 
-        String userId = "1";
+        String userId = "6";
         List<ProductCartBody> productCartBodyList = new ArrayList<>();
         productCartBodyList.add(new ProductCartBody("1000", "1"));
 
@@ -111,9 +103,6 @@ public class RegisterCartTests extends TestBase {
                                                            String userId,
                                                            String responseTag,
                                                            String responseMessage){
-        new GlobalParameters();
-        if(CartSteps.cartExists(token, GlobalParameters.TOREGISTERCART_USERID))
-            CartSteps.cancelBuy(token, GlobalParameters.TOREGISTERCART_USERID);
 
         List<ProductCartBody> productCartBodyList = new ArrayList<>();
         productCartBodyList.add(new ProductCartBody(productId, productQuantity));

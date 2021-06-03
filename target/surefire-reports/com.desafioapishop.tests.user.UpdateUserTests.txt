@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.desafioapishop.tests.user.UpdateUserTests
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.239 s - in com.desafioapishop.tests.user.UpdateUserTests
+forbiddenUserUpdate  Time elapsed: 0.109 s
+invalidParametersUserUpdate{String, String, String, String}[1]  Time elapsed: 0.1 s
+invalidParametersUserUpdate{String, String, String, String}[2]  Time elapsed: 0.116 s
+invalidParametersUserUpdate{String, String, String, String}[3]  Time elapsed: 0.101 s
+invalidParametersUserUpdate{String, String, String, String}[4]  Time elapsed: 0.1 s
+invalidParametersUserUpdate{String, String, String, String}[5]  Time elapsed: 0.1 s
+invalidParametersUserUpdate{String, String, String, String}[6]  Time elapsed: 0.107 s
+invalidParametersUserUpdate{String, String, String, String}[7]  Time elapsed: 0.093 s
+shouldNotUpdateUserWithOtherUsersEmail  Time elapsed: 0.101 s
+successfulUserUpdate  Time elapsed: 0.186 s
+invalidTokenUserUpdate  Time elapsed: 0.11 s

@@ -1,11 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.auth.AuthTests
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.651 s - in com.desafioapishop.tests.auth.AuthTests
-successfulAuthenticate  Time elapsed: 3.338 s
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.874 s <<< FAILURE! - in com.desafioapishop.tests.auth.AuthTests
+successfulAuthenticate  Time elapsed: 3.571 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path type doesn't match.
+Expected: Bearerr
+  Actual: Bearer
+
+	at com.desafioapishop.tests.auth.AuthTests.successfulAuthenticate(AuthTests.java:29)
+
 validateCredentialsAuthenticate{String, String, String}[1]  Time elapsed: 0.185 s
-validateCredentialsAuthenticate{String, String, String}[2]  Time elapsed: 0.144 s
-validateCredentialsAuthenticate{String, String, String}[3]  Time elapsed: 0.151 s
-validateCredentialsAuthenticate{String, String, String}[4]  Time elapsed: 0.141 s
-validateCredentialsAuthenticate{String, String, String}[5]  Time elapsed: 0.169 s
-nonExistingUserAuthenticate  Time elapsed: 0.216 s
+validateCredentialsAuthenticate{String, String, String}[2]  Time elapsed: 0.147 s
+validateCredentialsAuthenticate{String, String, String}[3]  Time elapsed: 0.147 s
+validateCredentialsAuthenticate{String, String, String}[4]  Time elapsed: 0.116 s
+validateCredentialsAuthenticate{String, String, String}[5]  Time elapsed: 0.131 s
+nonExistingUserAuthenticate  Time elapsed: 0.2 s

@@ -1,5 +1,6 @@
 com\desafioapishop\requests\auth\AuthRequest.class
 com\desafioapishop\bases\RequestBase.class
+com\desafioapishop\tests\cart\FinishOrCancelCartTests.class
 com\desafioapishop\requests\user\UserRequest.class
 com\desafioapishop\requests\cart\CartBody.class
 com\desafioapishop\utils\GeneralUtils.class
@@ -8,6 +9,7 @@ com\desafioapishop\utils\AuthUtils.class
 com\desafioapishop\GlobalParameters.class
 com\desafioapishop\tests\user\DeleteUserTests.class
 com\desafioapishop\requests\product\ProductCartBody.class
+com\desafioapishop\tests\cart\ListCartTests.class
 com\desafioapishop\requests\product\ProductRequest.class
 com\desafioapishop\tests\auth\AuthTests.class
 com\desafioapishop\tests\user\ListUserTests.class
@@ -19,6 +21,7 @@ com\desafioapishop\tests\product\UpdateProductTests.class
 com\desafioapishop\tests\user\RegisterUserTests.class
 com\desafioapishop\requests\user\UserBody.class
 com\desafioapishop\tests\product\RegisterProductTests.class
+com\desafioapishop\tests\cart\RegisterCartTests.class
 com\desafioapishop\requests\cart\CartRequest.class
 com\desafioapishop\tests\user\UpdateUserTests.class
 com\desafioapishop\bases\TestBase.class

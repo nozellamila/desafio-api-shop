@@ -1,0 +1,1 @@
+{"uuid":"72e40ba4-5053-431a-b103-efc840435228","name":"shouldNotRegisterProductForNonAdminProduct()","children":["536fe577-7b24-495d-abf1-1c29982984eb"],"befores":[{"name":"beforeMethod","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1622839463799,"stop":1622839463895}],"afters":[],"links":[],"start":1622839463799,"stop":1622839464017}

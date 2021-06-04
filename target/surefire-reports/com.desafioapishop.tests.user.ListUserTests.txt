@@ -1,15 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.user.ListUserTests
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.259 s - in com.desafioapishop.tests.user.ListUserTests
-listOneUser  Time elapsed: 0.122 s
-forbiddenListUser  Time elapsed: 0.116 s
-shouldNotFindUserToList{String, String, String}[1]  Time elapsed: 0.116 s
-shouldNotFindUserToList{String, String, String}[2]  Time elapsed: 0.1 s
-shouldNotFindUserToList{String, String, String}[3]  Time elapsed: 0.112 s
-shouldNotFindUserToList{String, String, String}[4]  Time elapsed: 0.111 s
-shouldNotFindUserToList{String, String, String}[5]  Time elapsed: 0.115 s
-invalidTokenListUser  Time elapsed: 0.1 s
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.412 s - in com.desafioapishop.tests.user.ListUserTests
+listOneUser  Time elapsed: 0.133 s
+forbiddenListUser  Time elapsed: 0.136 s
+shouldNotFindUserToList{String, String, String}[1]  Time elapsed: 0.122 s
+shouldNotFindUserToList{String, String, String}[2]  Time elapsed: 0.116 s
+shouldNotFindUserToList{String, String, String}[3]  Time elapsed: 0.121 s
+shouldNotFindUserToList{String, String, String}[4]  Time elapsed: 0.133 s
+shouldNotFindUserToList{String, String, String}[5]  Time elapsed: 0.116 s
+invalidTokenListUser  Time elapsed: 0.103 s
 listUsersWithFilters{String, String, String}[1]  Time elapsed: 0.111 s
-listUsersWithFilters{String, String, String}[2]  Time elapsed: 0.108 s
-listUsersWithFilters{String, String, String}[3]  Time elapsed: 0.112 s
+listUsersWithFilters{String, String, String}[2]  Time elapsed: 0.113 s
+listUsersWithFilters{String, String, String}[3]  Time elapsed: 0.125 s

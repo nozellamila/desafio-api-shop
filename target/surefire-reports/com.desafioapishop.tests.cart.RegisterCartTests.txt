@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.cart.RegisterCartTests
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.542 s - in com.desafioapishop.tests.cart.RegisterCartTests
-successfulRegisterCart  Time elapsed: 0.147 s
-shouldNotRegisterCartForUserWithAlreadyExistingCart  Time elapsed: 0.138 s
-forbiddenRegisterCart  Time elapsed: 0.112 s
-shouldNotRegisterCartWithNonExistingProduct  Time elapsed: 0.11 s
-shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[1]  Time elapsed: 0.116 s
-shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[2]  Time elapsed: 0.116 s
-shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[3]  Time elapsed: 0.132 s
-shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[4]  Time elapsed: 0.138 s
-shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[5]  Time elapsed: 0.131 s
-shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[6]  Time elapsed: 0.132 s
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.646 s - in com.desafioapishop.tests.cart.RegisterCartTests
+successfulRegisterCart  Time elapsed: 0.17 s
+shouldNotRegisterCartForUserWithAlreadyExistingCart  Time elapsed: 0.14 s
+forbiddenRegisterCart  Time elapsed: 0.1 s
+shouldNotRegisterCartWithNonExistingProduct  Time elapsed: 0.117 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[1]  Time elapsed: 0.114 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[2]  Time elapsed: 0.122 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[3]  Time elapsed: 0.116 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[4]  Time elapsed: 0.132 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[5]  Time elapsed: 0.132 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[6]  Time elapsed: 0.138 s
 shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[7]  Time elapsed: 0.131 s
-shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[8]  Time elapsed: 0.139 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[8]  Time elapsed: 0.124 s

@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.product.RegisterProductTests
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.129 s - in com.desafioapishop.tests.product.RegisterProductTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.239 s - in com.desafioapishop.tests.product.RegisterProductTests
 successfulRegisterProduct  Time elapsed: 0.169 s
-forbiddenRegisterProduct  Time elapsed: 0.1 s
-invalidParametersRegisterProduct{String, Float, Integer, String}[1]  Time elapsed: 0.123 s
-invalidParametersRegisterProduct{String, Float, Integer, String}[2]  Time elapsed: 0.117 s
-invalidParametersRegisterProduct{String, Float, Integer, String}[3]  Time elapsed: 0.129 s
-invalidParametersRegisterProduct{String, Float, Integer, String}[4]  Time elapsed: 0.126 s
-shouldNotRegisterDuplicatedName  Time elapsed: 0.122 s
-shouldNotRegisterProductForNonAdminProduct  Time elapsed: 0.198 s
+forbiddenRegisterProduct  Time elapsed: 0.134 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[1]  Time elapsed: 0.135 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[2]  Time elapsed: 0.147 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[3]  Time elapsed: 0.134 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[4]  Time elapsed: 0.12 s
+shouldNotRegisterDuplicatedName  Time elapsed: 0.132 s
+shouldNotRegisterProductForNonAdminProduct  Time elapsed: 0.209 s

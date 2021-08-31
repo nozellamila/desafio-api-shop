@@ -1,9 +1,33 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.user.DeleteUserTests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.67 s - in com.desafioapishop.tests.user.DeleteUserTests
-shouldNotExcludeNoRegisteredUser  Time elapsed: 0.122 s
-forbiddenExcludeUser  Time elapsed: 0.149 s
-invalidTokenExcludeUser  Time elapsed: 0.114 s
-excludeUser  Time elapsed: 0.123 s
-shouldNotExcludeUserWithCart  Time elapsed: 0.131 s
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 10.482 s <<< FAILURE! - in com.desafioapishop.tests.user.DeleteUserTests
+shouldNotExcludeNoRegisteredUser  Time elapsed: 1.724 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: Nenhum usuÃ¡rio excluÃ­do
+  Actual: Nenhum usuário excluído
+
+	at com.desafioapishop.tests.user.DeleteUserTests.shouldNotExcludeNoRegisteredUser(DeleteUserTests.java:48)
+
+forbiddenExcludeUser  Time elapsed: 2.491 s
+invalidTokenExcludeUser  Time elapsed: 1.92 s
+excludeUser  Time elapsed: 2.251 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: UsuÃ¡rio excluÃ­do com sucesso
+  Actual: Nenhum usuário excluído
+
+	at com.desafioapishop.tests.user.DeleteUserTests.excludeUser(DeleteUserTests.java:33)
+
+shouldNotExcludeUserWithCart  Time elapsed: 2.085 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: NÃ£o Ã© possÃ­vel excluir usuÃ¡rio com carrinho
+  Actual: Não é possível excluir usuário com carrinho
+
+	at com.desafioapishop.tests.user.DeleteUserTests.shouldNotExcludeUserWithCart(DeleteUserTests.java:65)
+

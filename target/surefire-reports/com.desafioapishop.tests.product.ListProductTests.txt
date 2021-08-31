@@ -1,12 +1,21 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.product.ListProductTests
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.04 s - in com.desafioapishop.tests.product.ListProductTests
-listProductWithFilters{String, String, String}[1]  Time elapsed: 0.14 s
-listProductWithFilters{String, String, String}[2]  Time elapsed: 0.145 s
-listProductWithFilters{String, String, String}[3]  Time elapsed: 0.122 s
-listProductWithFilters{String, String, String}[4]  Time elapsed: 0.116 s
-listProductWithFilters{String, String, String}[5]  Time elapsed: 0.116 s
-shouldNotFindProductToList{String, String, String, String, String}[1]  Time elapsed: 0.132 s
-shouldNotFindProductToList{String, String, String, String, String}[2]  Time elapsed: 0.115 s
-shouldNotFindProductToList{String, String, String, String, String}[3]  Time elapsed: 0.107 s
+Tests run: 8, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 15.859 s <<< FAILURE! - in com.desafioapishop.tests.product.ListProductTests
+listProductWithFilters{String, String, String}[1]  Time elapsed: 1.793 s
+listProductWithFilters{String, String, String}[2]  Time elapsed: 1.931 s
+listProductWithFilters{String, String, String}[3]  Time elapsed: 1.888 s
+listProductWithFilters{String, String, String}[4]  Time elapsed: 2.311 s
+listProductWithFilters{String, String, String}[5]  Time elapsed: 1.92 s
+shouldNotFindProductToList{String, String, String, String, String}[1]  Time elapsed: 2.142 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Produto nÃ£o encontrado> but was: <Produto não encontrado>
+	at com.desafioapishop.tests.product.ListProductTests.shouldNotFindProductToList(ListProductTests.java:55)
+
+shouldNotFindProductToList{String, String, String, String, String}[2]  Time elapsed: 2.014 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Produto nÃ£o encontrado> but was: <Produto não encontrado>
+	at com.desafioapishop.tests.product.ListProductTests.shouldNotFindProductToList(ListProductTests.java:55)
+
+shouldNotFindProductToList{String, String, String, String, String}[3]  Time elapsed: 1.835 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Produto nÃ£o encontrado> but was: <Produto não encontrado>
+	at com.desafioapishop.tests.product.ListProductTests.shouldNotFindProductToList(ListProductTests.java:55)
+

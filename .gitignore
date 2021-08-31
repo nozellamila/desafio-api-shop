@@ -4,4 +4,4 @@
 
 .vscode/
 
-target/
+target/allure-results

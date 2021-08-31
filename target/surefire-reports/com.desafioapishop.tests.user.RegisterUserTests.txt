@@ -1,13 +1,21 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.user.RegisterUserTests
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.335 s - in com.desafioapishop.tests.user.RegisterUserTests
-shouldNotRegisterUserWithOtherUsersEmail  Time elapsed: 0.132 s
-successfulRegisterUser  Time elapsed: 0.248 s
-invalidParametersRegisterUser{String, String, String, String}[1]  Time elapsed: 0.154 s
-invalidParametersRegisterUser{String, String, String, String}[2]  Time elapsed: 0.117 s
-invalidParametersRegisterUser{String, String, String, String}[3]  Time elapsed: 0.139 s
-invalidParametersRegisterUser{String, String, String, String}[4]  Time elapsed: 0.131 s
-invalidParametersRegisterUser{String, String, String, String}[5]  Time elapsed: 0.122 s
-invalidParametersRegisterUser{String, String, String, String}[6]  Time elapsed: 0.125 s
-invalidParametersRegisterUser{String, String, String, String}[7]  Time elapsed: 0.114 s
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 16.811 s <<< FAILURE! - in com.desafioapishop.tests.user.RegisterUserTests
+shouldNotRegisterUserWithOtherUsersEmail  Time elapsed: 1.716 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: UsuÃ¡rio jÃ¡ cadastrado com o e-mail: admin@email.com
+  Actual: Usuário já cadastrado com o e-mail: admin@email.com
+
+	at com.desafioapishop.tests.user.RegisterUserTests.shouldNotRegisterUserWithOtherUsersEmail(RegisterUserTests.java:81)
+
+successfulRegisterUser  Time elapsed: 2.092 s
+invalidParametersRegisterUser{String, String, String, String}[1]  Time elapsed: 1.747 s
+invalidParametersRegisterUser{String, String, String, String}[2]  Time elapsed: 1.758 s
+invalidParametersRegisterUser{String, String, String, String}[3]  Time elapsed: 1.903 s
+invalidParametersRegisterUser{String, String, String, String}[4]  Time elapsed: 1.877 s
+invalidParametersRegisterUser{String, String, String, String}[5]  Time elapsed: 1.827 s
+invalidParametersRegisterUser{String, String, String, String}[6]  Time elapsed: 1.999 s
+invalidParametersRegisterUser{String, String, String, String}[7]  Time elapsed: 1.873 s

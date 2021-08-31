@@ -1,16 +1,36 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.cart.RegisterCartTests
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.646 s - in com.desafioapishop.tests.cart.RegisterCartTests
-successfulRegisterCart  Time elapsed: 0.17 s
-shouldNotRegisterCartForUserWithAlreadyExistingCart  Time elapsed: 0.14 s
-forbiddenRegisterCart  Time elapsed: 0.1 s
-shouldNotRegisterCartWithNonExistingProduct  Time elapsed: 0.117 s
-shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[1]  Time elapsed: 0.114 s
-shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[2]  Time elapsed: 0.122 s
-shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[3]  Time elapsed: 0.116 s
-shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[4]  Time elapsed: 0.132 s
-shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[5]  Time elapsed: 0.132 s
-shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[6]  Time elapsed: 0.138 s
-shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[7]  Time elapsed: 0.131 s
-shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[8]  Time elapsed: 0.124 s
+Tests run: 12, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 23.103 s <<< FAILURE! - in com.desafioapishop.tests.cart.RegisterCartTests
+successfulRegisterCart  Time elapsed: 2.111 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <422>.
+
+	at com.desafioapishop.tests.cart.RegisterCartTests.successfulRegisterCart(RegisterCartTests.java:47)
+
+shouldNotRegisterCartForUserWithAlreadyExistingCart  Time elapsed: 2.023 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <422> but was <201>.
+
+	at com.desafioapishop.tests.cart.RegisterCartTests.shouldNotRegisterCartForUserWithAlreadyExistingCart(RegisterCartTests.java:73)
+
+forbiddenRegisterCart  Time elapsed: 1.784 s
+shouldNotRegisterCartWithNonExistingProduct  Time elapsed: 1.844 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: Produto nÃ£o existe
+  Actual: Produto não existe
+
+	at com.desafioapishop.tests.cart.RegisterCartTests.shouldNotRegisterCartWithNonExistingProduct(RegisterCartTests.java:95)
+
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[1]  Time elapsed: 1.687 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[2]  Time elapsed: 1.834 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[3]  Time elapsed: 1.85 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[4]  Time elapsed: 1.951 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[5]  Time elapsed: 1.79 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[6]  Time elapsed: 1.923 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[7]  Time elapsed: 2.169 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[8]  Time elapsed: 2.112 s

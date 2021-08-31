@@ -1,9 +1,33 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.product.DeleteProductTests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.749 s - in com.desafioapishop.tests.product.DeleteProductTests
-excludeProduct  Time elapsed: 0.131 s
-shouldNotExcludeProductForNonAdminUser  Time elapsed: 0.226 s
-forbiddenExcludeProduct  Time elapsed: 0.128 s
-shouldNotExcludeProductBelongingToACart  Time elapsed: 0.132 s
-shouldNotExcludeNonExistentProduct  Time elapsed: 0.132 s
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 9.922 s <<< FAILURE! - in com.desafioapishop.tests.product.DeleteProductTests
+excludeProduct  Time elapsed: 1.656 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: Produto excluÃ­do com sucesso
+  Actual: Nenhum produto excluído
+
+	at com.desafioapishop.tests.product.DeleteProductTests.excludeProduct(DeleteProductTests.java:31)
+
+shouldNotExcludeProductForNonAdminUser  Time elapsed: 2.902 s
+forbiddenExcludeProduct  Time elapsed: 1.859 s
+shouldNotExcludeProductBelongingToACart  Time elapsed: 1.783 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: NÃ£o Ã© possÃ­vel excluir produto pertencente a algum carrinho
+  Actual: Não é possível excluir produto pertencente a algum carrinho
+
+	at com.desafioapishop.tests.product.DeleteProductTests.shouldNotExcludeProductBelongingToACart(DeleteProductTests.java:80)
+
+shouldNotExcludeNonExistentProduct  Time elapsed: 1.717 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: Nenhum produto excluÃ­do
+  Actual: Nenhum produto excluído
+
+	at com.desafioapishop.tests.product.DeleteProductTests.shouldNotExcludeNonExistentProduct(DeleteProductTests.java:46)
+

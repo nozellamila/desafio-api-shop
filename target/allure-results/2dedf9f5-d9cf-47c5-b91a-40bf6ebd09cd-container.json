@@ -1,1 +1,0 @@
-{"uuid":"2dedf9f5-d9cf-47c5-b91a-40bf6ebd09cd","name":"2 => id=1, name=User, email=admin@email.com","children":["e15038de-11f8-47da-8a67-fcaf102d1237"],"befores":[{"name":"beforeMethod","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1622840235577,"stop":1622840235662}],"afters":[],"links":[],"start":1622840235562,"stop":1622840235678}

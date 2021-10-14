@@ -1,0 +1,1 @@
+{"uuid":"b3eb9207-cf25-46ce-8c12-fd3d639eefeb","name":"forbiddenRegisterProduct()","children":["b5277611-87c0-4457-8ccc-b0d0bff1e427"],"befores":[{"name":"beforeMethod","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1634238247104,"stop":1634238248009}],"afters":[],"links":[],"start":1634238247102,"stop":1634238248892}

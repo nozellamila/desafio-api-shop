@@ -1,0 +1,1 @@
+{"uuid":"f8ecb871-a83d-4dc7-b3b3-558a49626e41","name":"forbiddenCancelBuy()","children":["e6cbaaa5-6f13-4e28-a2bc-7c3744c9c170"],"befores":[{"name":"beforeMethod","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1634238187420,"stop":1634238188302}],"afters":[],"links":[],"start":1634238187418,"stop":1634238189124}

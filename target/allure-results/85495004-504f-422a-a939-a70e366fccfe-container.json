@@ -1,0 +1,1 @@
+{"uuid":"85495004-504f-422a-a939-a70e366fccfe","name":"shouldNotExcludeNoRegisteredUser()","children":["5e8d1349-6c60-448b-a02d-aa5a36552074"],"befores":[{"name":"beforeMethod","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1634238276921,"stop":1634238277846}],"afters":[],"links":[],"start":1634238276920,"stop":1634238279232}

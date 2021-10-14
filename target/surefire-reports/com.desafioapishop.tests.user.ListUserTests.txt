@@ -1,30 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.user.ListUserTests
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 22.239 s <<< FAILURE! - in com.desafioapishop.tests.user.ListUserTests
-listOneUser  Time elapsed: 2.377 s
-forbiddenListUser  Time elapsed: 2.864 s
-shouldNotFindUserToList{String, String, String}[1]  Time elapsed: 1.855 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <UsuÃ¡rio nÃ£o encontrado> but was: <Usuário não encontrado>
-	at com.desafioapishop.tests.user.ListUserTests.shouldNotFindUserToList(ListUserTests.java:78)
-
-shouldNotFindUserToList{String, String, String}[2]  Time elapsed: 1.869 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <UsuÃ¡rio nÃ£o encontrado> but was: <Usuário não encontrado>
-	at com.desafioapishop.tests.user.ListUserTests.shouldNotFindUserToList(ListUserTests.java:78)
-
-shouldNotFindUserToList{String, String, String}[3]  Time elapsed: 1.87 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <UsuÃ¡rio nÃ£o encontrado> but was: <Usuário não encontrado>
-	at com.desafioapishop.tests.user.ListUserTests.shouldNotFindUserToList(ListUserTests.java:78)
-
-shouldNotFindUserToList{String, String, String}[4]  Time elapsed: 2.036 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <UsuÃ¡rio nÃ£o encontrado> but was: <Usuário não encontrado>
-	at com.desafioapishop.tests.user.ListUserTests.shouldNotFindUserToList(ListUserTests.java:78)
-
-shouldNotFindUserToList{String, String, String}[5]  Time elapsed: 1.788 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <UsuÃ¡rio nÃ£o encontrado> but was: <Usuário não encontrado>
-	at com.desafioapishop.tests.user.ListUserTests.shouldNotFindUserToList(ListUserTests.java:78)
-
-invalidTokenListUser  Time elapsed: 2.019 s
-listUsersWithFilters{String, String, String}[1]  Time elapsed: 1.859 s
-listUsersWithFilters{String, String, String}[2]  Time elapsed: 1.7 s
-listUsersWithFilters{String, String, String}[3]  Time elapsed: 1.944 s
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.627 s - in com.desafioapishop.tests.user.ListUserTests
+listOneUser  Time elapsed: 1.755 s
+forbiddenListUser  Time elapsed: 2.586 s
+shouldNotFindUserToList{String, String, String}[1]  Time elapsed: 1.723 s
+shouldNotFindUserToList{String, String, String}[2]  Time elapsed: 1.886 s
+shouldNotFindUserToList{String, String, String}[3]  Time elapsed: 1.725 s
+shouldNotFindUserToList{String, String, String}[4]  Time elapsed: 1.703 s
+shouldNotFindUserToList{String, String, String}[5]  Time elapsed: 1.734 s
+invalidTokenListUser  Time elapsed: 1.798 s
+listUsersWithFilters{String, String, String}[1]  Time elapsed: 1.863 s
+listUsersWithFilters{String, String, String}[2]  Time elapsed: 1.917 s
+listUsersWithFilters{String, String, String}[3]  Time elapsed: 1.911 s

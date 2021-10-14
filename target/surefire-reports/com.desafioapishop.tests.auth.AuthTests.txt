@@ -1,11 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.auth.AuthTests
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.646 s - in com.desafioapishop.tests.auth.AuthTests
-successfulAuthenticate  Time elapsed: 6.779 s
-validateCredentialsAuthenticate{String, String, String}[1]  Time elapsed: 2.001 s
-validateCredentialsAuthenticate{String, String, String}[2]  Time elapsed: 1.847 s
-validateCredentialsAuthenticate{String, String, String}[3]  Time elapsed: 1.867 s
-validateCredentialsAuthenticate{String, String, String}[4]  Time elapsed: 1.79 s
-validateCredentialsAuthenticate{String, String, String}[5]  Time elapsed: 2.024 s
-nonExistingUserAuthenticate  Time elapsed: 2.149 s
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.801 s - in com.desafioapishop.tests.auth.AuthTests
+successfulAuthenticate  Time elapsed: 5.804 s
+validateCredentialsAuthenticate{String, String, String}[1]  Time elapsed: 1.792 s
+validateCredentialsAuthenticate{String, String, String}[2]  Time elapsed: 1.775 s
+validateCredentialsAuthenticate{String, String, String}[3]  Time elapsed: 1.853 s
+validateCredentialsAuthenticate{String, String, String}[4]  Time elapsed: 1.753 s
+validateCredentialsAuthenticate{String, String, String}[5]  Time elapsed: 1.8 s
+nonExistingUserAuthenticate  Time elapsed: 1.827 s

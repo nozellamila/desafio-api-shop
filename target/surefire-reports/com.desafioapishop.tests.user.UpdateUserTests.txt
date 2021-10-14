@@ -1,23 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.user.UpdateUserTests
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.161 s <<< FAILURE! - in com.desafioapishop.tests.user.UpdateUserTests
-forbiddenUserUpdate  Time elapsed: 2.569 s
-invalidParametersUserUpdate{String, String, String, String}[1]  Time elapsed: 1.734 s
-invalidParametersUserUpdate{String, String, String, String}[2]  Time elapsed: 1.829 s
-invalidParametersUserUpdate{String, String, String, String}[3]  Time elapsed: 1.807 s
-invalidParametersUserUpdate{String, String, String, String}[4]  Time elapsed: 1.893 s
-invalidParametersUserUpdate{String, String, String, String}[5]  Time elapsed: 1.822 s
-invalidParametersUserUpdate{String, String, String, String}[6]  Time elapsed: 1.894 s
-invalidParametersUserUpdate{String, String, String, String}[7]  Time elapsed: 1.784 s
-shouldNotUpdateUserWithOtherUsersEmail  Time elapsed: 1.973 s  <<< FAILURE!
-java.lang.AssertionError: 
-1 expectation failed.
-JSON path message doesn't match.
-Expected: UsuÃ¡rio jÃ¡ cadastrado com o e-mail: admin@email.com
-  Actual: Usuário já cadastrado com o e-mail: admin@email.com
-
-	at com.desafioapishop.tests.user.UpdateUserTests.shouldNotUpdateUserWithOtherUsersEmail(UpdateUserTests.java:124)
-
-successfulUserUpdate  Time elapsed: 2.161 s
-invalidTokenUserUpdate  Time elapsed: 1.672 s
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.695 s - in com.desafioapishop.tests.user.UpdateUserTests
+forbiddenUserUpdate  Time elapsed: 2.634 s
+invalidParametersUserUpdate{String, String, String, String}[1]  Time elapsed: 1.824 s
+invalidParametersUserUpdate{String, String, String, String}[2]  Time elapsed: 1.725 s
+invalidParametersUserUpdate{String, String, String, String}[3]  Time elapsed: 1.833 s
+invalidParametersUserUpdate{String, String, String, String}[4]  Time elapsed: 1.876 s
+invalidParametersUserUpdate{String, String, String, String}[5]  Time elapsed: 1.769 s
+invalidParametersUserUpdate{String, String, String, String}[6]  Time elapsed: 1.861 s
+invalidParametersUserUpdate{String, String, String, String}[7]  Time elapsed: 1.76 s
+shouldNotUpdateUserWithOtherUsersEmail  Time elapsed: 1.768 s
+successfulUserUpdate  Time elapsed: 1.786 s
+invalidTokenUserUpdate  Time elapsed: 1.833 s

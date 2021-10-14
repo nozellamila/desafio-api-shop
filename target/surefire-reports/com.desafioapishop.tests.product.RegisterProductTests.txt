@@ -1,20 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.product.RegisterProductTests
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 17.001 s <<< FAILURE! - in com.desafioapishop.tests.product.RegisterProductTests
-successfulRegisterProduct  Time elapsed: 1.904 s
-forbiddenRegisterProduct  Time elapsed: 1.932 s
-invalidParametersRegisterProduct{String, Float, Integer, String}[1]  Time elapsed: 1.745 s
-invalidParametersRegisterProduct{String, Float, Integer, String}[2]  Time elapsed: 1.9 s
-invalidParametersRegisterProduct{String, Float, Integer, String}[3]  Time elapsed: 1.719 s
-invalidParametersRegisterProduct{String, Float, Integer, String}[4]  Time elapsed: 1.936 s
-shouldNotRegisterDuplicatedName  Time elapsed: 2.987 s  <<< FAILURE!
-java.lang.AssertionError: 
-1 expectation failed.
-JSON path message doesn't match.
-Expected: Produto jÃ¡ cadastrado com o nome: Product to find
-  Actual: Produto já cadastrado com o nome: Product to find
-
-	at com.desafioapishop.tests.product.RegisterProductTests.shouldNotRegisterDuplicatedName(RegisterProductTests.java:67)
-
-shouldNotRegisterProductForNonAdminProduct  Time elapsed: 2.854 s
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.942 s - in com.desafioapishop.tests.product.RegisterProductTests
+successfulRegisterProduct  Time elapsed: 1.83 s
+forbiddenRegisterProduct  Time elapsed: 1.792 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[1]  Time elapsed: 1.841 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[2]  Time elapsed: 1.806 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[3]  Time elapsed: 2.26 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[4]  Time elapsed: 1.791 s
+shouldNotRegisterDuplicatedName  Time elapsed: 1.781 s
+shouldNotRegisterProductForNonAdminProduct  Time elapsed: 2.817 s

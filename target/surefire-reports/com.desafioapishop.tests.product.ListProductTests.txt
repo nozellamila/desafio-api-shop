@@ -1,21 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.product.ListProductTests
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 15.859 s <<< FAILURE! - in com.desafioapishop.tests.product.ListProductTests
-listProductWithFilters{String, String, String}[1]  Time elapsed: 1.793 s
-listProductWithFilters{String, String, String}[2]  Time elapsed: 1.931 s
-listProductWithFilters{String, String, String}[3]  Time elapsed: 1.888 s
-listProductWithFilters{String, String, String}[4]  Time elapsed: 2.311 s
-listProductWithFilters{String, String, String}[5]  Time elapsed: 1.92 s
-shouldNotFindProductToList{String, String, String, String, String}[1]  Time elapsed: 2.142 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <Produto nÃ£o encontrado> but was: <Produto não encontrado>
-	at com.desafioapishop.tests.product.ListProductTests.shouldNotFindProductToList(ListProductTests.java:55)
-
-shouldNotFindProductToList{String, String, String, String, String}[2]  Time elapsed: 2.014 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <Produto nÃ£o encontrado> but was: <Produto não encontrado>
-	at com.desafioapishop.tests.product.ListProductTests.shouldNotFindProductToList(ListProductTests.java:55)
-
-shouldNotFindProductToList{String, String, String, String, String}[3]  Time elapsed: 1.835 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <Produto nÃ£o encontrado> but was: <Produto não encontrado>
-	at com.desafioapishop.tests.product.ListProductTests.shouldNotFindProductToList(ListProductTests.java:55)
-
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.852 s - in com.desafioapishop.tests.product.ListProductTests
+listProductWithFilters{String, String, String}[1]  Time elapsed: 1.98 s
+listProductWithFilters{String, String, String}[2]  Time elapsed: 1.983 s
+listProductWithFilters{String, String, String}[3]  Time elapsed: 1.939 s
+listProductWithFilters{String, String, String}[4]  Time elapsed: 1.829 s
+listProductWithFilters{String, String, String}[5]  Time elapsed: 1.734 s
+shouldNotFindProductToList{String, String, String, String, String}[1]  Time elapsed: 1.744 s
+shouldNotFindProductToList{String, String, String, String, String}[2]  Time elapsed: 1.882 s
+shouldNotFindProductToList{String, String, String, String, String}[3]  Time elapsed: 1.74 s

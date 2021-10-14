@@ -26,7 +26,7 @@ jobs:
     - name: Build with Maven
       run: mvn test
       continue-on-error: true
-    - run: mkdir staging && cp target/allure-reports/* staging
+    - run: mkdir staging && cp target/allure-results/* staging
     - uses: actions/upload-artifact@v2
       with:
         name: Test Results

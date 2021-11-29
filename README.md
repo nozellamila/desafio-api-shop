@@ -18,10 +18,11 @@ Tabela de conteúdos
 <!--te-->
 
 # Objeto de teste
+O sistema sob teste deste projeto é um protótipo de pet shop, foi inspirado nos endpoints e regras da API [petstore](https://petstore.swagger.io/). Trata-se de um crud para compra e cadastro de produtos. Existem três endpoints cobertos pela automação aqui apresentada: Users, Carts, Products. Foi coberto pela automação fluxos principais, exceções, permissões e autenticação. Documentação disponível [aqui](https://shop-prototype-mila.herokuapp.com/swagger-ui/index.html).
 # Suíte de testes
-  - Quantos e quais casos de teste
+Foram construídos 52 testes, separados por endpoint e por verbo disponível em cada recurso. Para testes de parâmetros inválidos e busca de recursos utilizando filtros foi utilizada a abordagem de Data-Driven Testing, consumindo dados de planilhas. Para validar o formato correto de data foi utilizado a asserção com regex, veja, por exemplo, o teste de [registro de compra](https://github.com/nozellamila/desafio-api-shop/blob/master/src/test/java/com/desafioapishop/tests/cart/RegisterCartTests.java).
 # Execução dos testes
-execução paralela, diferentes ambientes de execução, geração de relatório
+Os testes podem ser executados localmente ou através de um pipeline de testes. A suíte pode ainda ser executada em diferentes ambientes, utilizando diferentes parâmetros contidos em um [arquivo de configuração](https://github.com/nozellamila/desafio-api-shop/blob/master/src/test/globalParameters.properties). O projeto contém também o recurso de paralelismo e possibilidade de geração de um relatório com os resultados dos testes.
 ## Execução local
 ### Pré-requisitos
   - Rodar com dotnet

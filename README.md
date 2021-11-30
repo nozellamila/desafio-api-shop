@@ -31,7 +31,7 @@ Para rodar os testes com maven, basta clonar o projeto na máquina, acessar a ra
 
 A [documentação](https://docs.qameta.io/allure/#_installing_a_commandline) sugere utilizar o [Scoop](http://scoop.sh/) para facilitar a instalação e configuração no ambiente Windows.
 
-Com o Allure commandline configurado, basta escrever o comando 'allure serve <path-to-allure-results>' no cmd. Este caminho é o diretório raiz do projeto + target\allure-results.
+Com o Allure commandline configurado, basta escrever o comando 'allure serve /home/path/to/project/target/allure-results/' no cmd, este comando irá iniciar um servidor e mostrará o resultado da execução dos testes realizados pelo comando 'mvn test'. O caminho mostrado (/home/path/to/project/target/allure-results/) é o diretório raiz do projeto + target\allure-results.
 
 ## Execução na ferramenta de integração contínua
 Os testes são executados sempre que um novo commit é feito. A configuração da pipeline foi feita utilizando o github actions, seu arquivo .yml pode ser visto [aqui](https://github.com/nozellamila/desafio-api-shop/blob/master/.github/workflows/maven.yml)

@@ -10,7 +10,7 @@
    * [Execução dos testes](#execução-dos-testes)
       * [Execução local](#execução-local)
         * [Pré-requisitos](#pré-requisitos)
-        * [Visualização do relatório de testes](#visualização-do-relatório-de-testes)
+        * [Execução e visualização do relatório de testes](#execução-e-visualização-do-relatório-de-testes)
       * [Execução na ferramenta de integração contínua](#execução-na-ferramenta-de-integração-contínua)
    * [Gerenciamento de massa de dados](#gerenciamento-de-massa-de-dados)
    * [Lista de tecnologias utilizadas](#lista-de-tecnologias-utilizadas)
@@ -24,18 +24,31 @@ Foram construídos 52 testes, separados por endpoint e por verbo disponível em 
 Os testes podem ser executados localmente ou através de um pipeline de testes. A suíte pode ainda ser executada em diferentes ambientes, utilizando diferentes parâmetros contidos em um [arquivo de configuração](https://github.com/nozellamila/desafio-api-shop/blob/master/src/test/globalParameters.properties). O projeto contém também o recurso de paralelismo e possibilidade de geração de um relatório com os resultados dos testes.
 ## Execução local
 ### Pré-requisitos
-Para realizar a execução local é preciso ter o [Java 15](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html) e o [Maven](https://maven.apache.org/download.cgi) instalado e configurado na máquina.
+Para realizar a execução local é preciso ter o [Java 15](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html) e o [Maven](https://maven.apache.org/download.cgi) instalados e configurados na máquina.
 
 ### Execução e visualização do relatório de testes
-Para rodar os testes com maven, basta clonar o projeto na máquina, acessar a raiz do projeto e executar o comando 'mvn test'
+Para rodar os testes com maven, basta clonar o projeto na máquina, acessar a raiz do projeto e executar o comando 'mvn test'. Para visualizar o relatório com Allure Reports localmente é preciso tê-lo instalado e configurado previamente.
 
-- Como visualizar o relatório gerado
+A [documentação](https://docs.qameta.io/allure/#_installing_a_commandline) sugere utilizar o [Scoop](http://scoop.sh/) para facilitar a instalação e configuração no ambiente Windows.
+
+Com o Allure commandline configurado, basta escrever o comando 'allure serve <path-to-allure-results>' no cmd. Este caminho é o diretório raiz do projeto + target\allure-results.
+
 ## Execução na ferramenta de integração contínua
-- Como os testes rodam no github actions
+Os testes são executados sempre que um novo commit é feito. A configuração da pipeline foi feita utilizando o github actions, seu arquivo .yml pode ser visto [aqui](https://github.com/nozellamila/desafio-api-shop/blob/master/.github/workflows/maven.yml)
+  
 # Gerenciamento de massa de dados
-- Proposta para gerenciar ambiente e massa de dados
+A ideia inicial para gerenciar a massa de dados dos testes era prover um ambiente limpo, com dados iniciais carregados neste ambiente. Por isso a API shop-prototype foi feita e utilizou o docker para fazer sua compilação e deploy. Como essa estratégia não foi bem sucedida, a API foi deployada no Heroku e seu endereço foi utilizado na automação.
+  
+
 # Lista de tecnologias utilizadas
-- Lista de tecnologias utilizadas
+- Java
+- Maven
+- Maven Surefire Plugin
+- Junit
+- Rest Assured
+- Lombok
+- OpenCsv
+- Allure Reports
   
 
 

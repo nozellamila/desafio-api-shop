@@ -12,7 +12,7 @@ public class DBUtils {
         Connection connection = null;
         GlobalParameters globalParameters = new GlobalParameters();
 
-        //cleanDB();
+        cleanDB();
 
         String queriesPath = System.getProperty("user.dir")+"/src/test/java/com/desafioapishop/querys/";
         String query = GeneralUtils.readFileToAString(queriesPath + "DBPopulate.sql");

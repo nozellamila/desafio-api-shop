@@ -13,7 +13,7 @@ public class TestBase {
     @BeforeAll
     public static void beforeSuite(){
 
-        //DBUtils.executeInitialQuery();
+        DBUtils.executeInitialQuery();
     }
 
     @BeforeEach

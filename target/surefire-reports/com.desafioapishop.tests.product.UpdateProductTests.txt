@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.product.UpdateProductTests
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.671 s - in com.desafioapishop.tests.product.UpdateProductTests
-invalidParametersUpdateProduct{String, Float, Integer, String}[1]  Time elapsed: 1.781 s
-invalidParametersUpdateProduct{String, Float, Integer, String}[2]  Time elapsed: 1.925 s
-invalidParametersUpdateProduct{String, Float, Integer, String}[3]  Time elapsed: 1.972 s
-invalidParametersUpdateProduct{String, Float, Integer, String}[4]  Time elapsed: 1.833 s
-shouldNotUpdateWithDuplicatedName  Time elapsed: 1.817 s
-successfulUpdateProduct  Time elapsed: 1.783 s
-shouldNotUpdateProductForNonAdminProduct  Time elapsed: 2.749 s
-forbiddenUpdateProduct  Time elapsed: 1.791 s
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.06 s - in com.desafioapishop.tests.product.UpdateProductTests
+invalidParametersUpdateProduct{String, Float, Integer, String}[1]  Time elapsed: 1.846 s
+invalidParametersUpdateProduct{String, Float, Integer, String}[2]  Time elapsed: 1.83 s
+invalidParametersUpdateProduct{String, Float, Integer, String}[3]  Time elapsed: 2.119 s
+invalidParametersUpdateProduct{String, Float, Integer, String}[4]  Time elapsed: 1.917 s
+shouldNotUpdateWithDuplicatedName  Time elapsed: 2.073 s
+successfulUpdateProduct  Time elapsed: 2.139 s
+shouldNotUpdateProductForNonAdminProduct  Time elapsed: 2.714 s
+forbiddenUpdateProduct  Time elapsed: 2.336 s

@@ -1,0 +1,1 @@
+{"uuid":"b9f1566c-410b-48b3-808a-1d9c52837dfd","name":"forbiddenUpdateProduct()","children":["8b5c3f31-55c1-42f3-a7c3-14fae5db24e8"],"befores":[{"name":"beforeMethod","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1648316677319,"stop":1648316683453}],"afters":[],"links":[],"start":1648316677318,"stop":1648316683466}

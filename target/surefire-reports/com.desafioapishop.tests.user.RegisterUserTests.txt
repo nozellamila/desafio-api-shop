@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: com.desafioapishop.tests.user.RegisterUserTests
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 55.428 s - in com.desafioapishop.tests.user.RegisterUserTests
+shouldNotRegisterUserWithOtherUsersEmail  Time elapsed: 6.137 s
+successfulRegisterUser  Time elapsed: 6.263 s
+invalidParametersRegisterUser{String, String, String, String}[1]  Time elapsed: 6.166 s
+invalidParametersRegisterUser{String, String, String, String}[2]  Time elapsed: 6.129 s
+invalidParametersRegisterUser{String, String, String, String}[3]  Time elapsed: 6.15 s
+invalidParametersRegisterUser{String, String, String, String}[4]  Time elapsed: 6.131 s
+invalidParametersRegisterUser{String, String, String, String}[5]  Time elapsed: 6.135 s
+invalidParametersRegisterUser{String, String, String, String}[6]  Time elapsed: 6.139 s
+invalidParametersRegisterUser{String, String, String, String}[7]  Time elapsed: 6.145 s

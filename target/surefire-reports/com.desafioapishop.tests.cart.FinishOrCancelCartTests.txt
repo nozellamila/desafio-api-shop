@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.desafioapishop.tests.cart.FinishOrCancelCartTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.02 s - in com.desafioapishop.tests.cart.FinishOrCancelCartTests
+shouldNotCancelBuyForUserWithNoCart  Time elapsed: 6.173 s
+shouldNotFinishBuyForUserWithNoCart  Time elapsed: 6.182 s
+forbiddenCancelBuy  Time elapsed: 6.12 s
+forbiddenFinishBuy  Time elapsed: 6.166 s
+successfulCancelBuy  Time elapsed: 6.185 s
+successfulFinishBuy  Time elapsed: 6.178 s

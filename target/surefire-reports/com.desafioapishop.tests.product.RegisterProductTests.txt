@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.desafioapishop.tests.product.RegisterProductTests
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.258 s - in com.desafioapishop.tests.product.RegisterProductTests
+successfulRegisterProduct  Time elapsed: 6.106 s
+forbiddenRegisterProduct  Time elapsed: 6.144 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[1]  Time elapsed: 6.126 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[2]  Time elapsed: 6.209 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[3]  Time elapsed: 6.141 s
+invalidParametersRegisterProduct{String, Float, Integer, String}[4]  Time elapsed: 6.137 s
+shouldNotRegisterDuplicatedName  Time elapsed: 6.16 s
+shouldNotRegisterProductForNonAdminProduct  Time elapsed: 6.209 s

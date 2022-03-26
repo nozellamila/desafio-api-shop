@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.desafioapishop.tests.product.UpdateProductTests
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.224 s - in com.desafioapishop.tests.product.UpdateProductTests
+invalidParametersUpdateProduct{String, Float, Integer, String}[1]  Time elapsed: 6.095 s
+invalidParametersUpdateProduct{String, Float, Integer, String}[2]  Time elapsed: 6.168 s
+invalidParametersUpdateProduct{String, Float, Integer, String}[3]  Time elapsed: 6.14 s
+invalidParametersUpdateProduct{String, Float, Integer, String}[4]  Time elapsed: 6.129 s
+shouldNotUpdateWithDuplicatedName  Time elapsed: 6.153 s
+successfulUpdateProduct  Time elapsed: 6.136 s
+shouldNotUpdateProductForNonAdminProduct  Time elapsed: 6.234 s
+forbiddenUpdateProduct  Time elapsed: 6.148 s

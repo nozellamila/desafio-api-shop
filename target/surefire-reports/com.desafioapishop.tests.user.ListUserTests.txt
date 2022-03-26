@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.desafioapishop.tests.user.ListUserTests
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 67.585 s - in com.desafioapishop.tests.user.ListUserTests
+listOneUser  Time elapsed: 6.126 s
+forbiddenListUser  Time elapsed: 6.159 s
+shouldNotFindUserToList{String, String, String}[1]  Time elapsed: 6.162 s
+shouldNotFindUserToList{String, String, String}[2]  Time elapsed: 6.111 s
+shouldNotFindUserToList{String, String, String}[3]  Time elapsed: 6.156 s
+shouldNotFindUserToList{String, String, String}[4]  Time elapsed: 6.156 s
+shouldNotFindUserToList{String, String, String}[5]  Time elapsed: 6.131 s
+invalidTokenListUser  Time elapsed: 6.122 s
+listUsersWithFilters{String, String, String}[1]  Time elapsed: 6.137 s
+listUsersWithFilters{String, String, String}[2]  Time elapsed: 6.142 s
+listUsersWithFilters{String, String, String}[3]  Time elapsed: 6.145 s

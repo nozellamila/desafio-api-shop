@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.desafioapishop.tests.cart.RegisterCartTests
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 73.97 s - in com.desafioapishop.tests.cart.RegisterCartTests
+successfulRegisterCart  Time elapsed: 6.174 s
+shouldNotRegisterCartForUserWithAlreadyExistingCart  Time elapsed: 6.164 s
+forbiddenRegisterCart  Time elapsed: 6.126 s
+shouldNotRegisterCartWithNonExistingProduct  Time elapsed: 6.163 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[1]  Time elapsed: 6.151 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[2]  Time elapsed: 6.194 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[3]  Time elapsed: 6.192 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[4]  Time elapsed: 6.17 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[5]  Time elapsed: 6.159 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[6]  Time elapsed: 6.131 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[7]  Time elapsed: 6.158 s
+shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[8]  Time elapsed: 6.153 s

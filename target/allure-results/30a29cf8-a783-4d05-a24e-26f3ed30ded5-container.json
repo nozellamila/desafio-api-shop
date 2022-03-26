@@ -1,0 +1,1 @@
+{"uuid":"30a29cf8-a783-4d05-a24e-26f3ed30ded5","name":"shouldNotFindCartToList()","children":["c12f247f-7dbb-4346-89dd-1666ed0f1caa"],"befores":[{"name":"beforeMethod","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1648316418231,"stop":1648316424377}],"afters":[],"links":[],"start":1648316418229,"stop":1648316424379}

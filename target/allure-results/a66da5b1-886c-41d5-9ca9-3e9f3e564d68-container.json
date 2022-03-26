@@ -1,0 +1,1 @@
+{"uuid":"a66da5b1-886c-41d5-9ca9-3e9f3e564d68","name":"forbiddenRegisterCart()","children":["fce34fbf-6f3a-4490-b2eb-7b06c8d97adf"],"befores":[{"name":"beforeMethod","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1648316442953,"stop":1648316449068}],"afters":[],"links":[],"start":1648316442951,"stop":1648316449078}

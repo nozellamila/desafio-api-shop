@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.desafioapishop.tests.product.ListProductTests
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.316 s - in com.desafioapishop.tests.product.ListProductTests
+listProductWithFilters{String, String, String}[1]  Time elapsed: 6.164 s
+listProductWithFilters{String, String, String}[2]  Time elapsed: 6.159 s
+listProductWithFilters{String, String, String}[3]  Time elapsed: 6.137 s
+listProductWithFilters{String, String, String}[4]  Time elapsed: 6.172 s
+listProductWithFilters{String, String, String}[5]  Time elapsed: 6.17 s
+shouldNotFindProductToList{String, String, String, String, String}[1]  Time elapsed: 6.174 s
+shouldNotFindProductToList{String, String, String, String, String}[2]  Time elapsed: 6.157 s
+shouldNotFindProductToList{String, String, String, String, String}[3]  Time elapsed: 6.154 s

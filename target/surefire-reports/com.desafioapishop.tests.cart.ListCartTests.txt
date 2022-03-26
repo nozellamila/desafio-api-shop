@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.desafioapishop.tests.cart.ListCartTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.515 s - in com.desafioapishop.tests.cart.ListCartTests
+listOneCart  Time elapsed: 6.155 s
+shouldNotFindCartToList  Time elapsed: 6.15 s
+listCartWithFilters  Time elapsed: 6.195 s

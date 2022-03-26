@@ -12,17 +12,20 @@ public class TestBase {
 
     @BeforeAll
     public static void beforeSuite(){
-        DBUtils.cleanDB();
-        DBUtils.executeInitialQuery();
     }
 
     @BeforeEach
-    public void beforeMethod(){
+    public void beforeMethod() throws InterruptedException {
         AuthBody authBody = new AuthBody();
         AuthUtils authUtils = new AuthUtils();
 
         DBUtils.cleanDB();
+
+        Thread.sleep(3000);
+
         DBUtils.executeInitialQuery();
+
+        Thread.sleep(3000);
 
         token = authUtils.generateToken(authBody);
     }

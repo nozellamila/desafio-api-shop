@@ -1,16 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.cart.FinishOrCancelCartTests
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.017 s <<< FAILURE! - in com.desafioapishop.tests.cart.FinishOrCancelCartTests
-shouldNotCancelBuyForUserWithNoCart  Time elapsed: 3.744 s
-shouldNotFinishBuyForUserWithNoCart  Time elapsed: 4.83 s
-forbiddenCancelBuy  Time elapsed: 3.39 s
-forbiddenFinishBuy  Time elapsed: 3.599 s
-successfulCancelBuy  Time elapsed: 4.244 s  <<< FAILURE!
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 68.921 s <<< FAILURE! - in com.desafioapishop.tests.cart.FinishOrCancelCartTests
+shouldNotCancelBuyForUserWithNoCart  Time elapsed: 7.802 s
+shouldNotFinishBuyForUserWithNoCart  Time elapsed: 7.86 s
+forbiddenCancelBuy  Time elapsed: 7.758 s
+forbiddenFinishBuy  Time elapsed: 8.504 s
+successfulCancelBuy  Time elapsed: 7.805 s  <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <200> but was <404>.
 
 	at com.desafioapishop.tests.cart.FinishOrCancelCartTests.successfulCancelBuy(FinishOrCancelCartTests.java:71)
 
-successfulFinishBuy  Time elapsed: 4.154 s
+successfulFinishBuy  Time elapsed: 29.178 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at com.desafioapishop.tests.cart.FinishOrCancelCartTests.successfulFinishBuy(FinishOrCancelCartTests.java:28)
+

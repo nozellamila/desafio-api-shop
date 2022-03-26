@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.user.RegisterUserTests
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.746 s - in com.desafioapishop.tests.user.RegisterUserTests
-shouldNotRegisterUserWithOtherUsersEmail  Time elapsed: 2.722 s
-successfulRegisterUser  Time elapsed: 3.347 s
-invalidParametersRegisterUser{String, String, String, String}[1]  Time elapsed: 2.814 s
-invalidParametersRegisterUser{String, String, String, String}[2]  Time elapsed: 2.153 s
-invalidParametersRegisterUser{String, String, String, String}[3]  Time elapsed: 2.786 s
-invalidParametersRegisterUser{String, String, String, String}[4]  Time elapsed: 2.267 s
-invalidParametersRegisterUser{String, String, String, String}[5]  Time elapsed: 2.547 s
-invalidParametersRegisterUser{String, String, String, String}[6]  Time elapsed: 2.875 s
-invalidParametersRegisterUser{String, String, String, String}[7]  Time elapsed: 2.209 s
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 71.85 s - in com.desafioapishop.tests.user.RegisterUserTests
+shouldNotRegisterUserWithOtherUsersEmail  Time elapsed: 7.761 s
+successfulRegisterUser  Time elapsed: 7.963 s
+invalidParametersRegisterUser{String, String, String, String}[1]  Time elapsed: 7.887 s
+invalidParametersRegisterUser{String, String, String, String}[2]  Time elapsed: 7.861 s
+invalidParametersRegisterUser{String, String, String, String}[3]  Time elapsed: 7.846 s
+invalidParametersRegisterUser{String, String, String, String}[4]  Time elapsed: 8.038 s
+invalidParametersRegisterUser{String, String, String, String}[5]  Time elapsed: 7.801 s
+invalidParametersRegisterUser{String, String, String, String}[6]  Time elapsed: 7.999 s
+invalidParametersRegisterUser{String, String, String, String}[7]  Time elapsed: 8.662 s

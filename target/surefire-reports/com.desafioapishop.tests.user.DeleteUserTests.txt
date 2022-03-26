@@ -1,19 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.user.DeleteUserTests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 3.22 s <<< FAILURE! - in com.desafioapishop.tests.user.DeleteUserTests
-shouldNotExcludeNoRegisteredUser  Time elapsed: 0.072 s  <<< ERROR!
-java.net.SocketException: Network is unreachable: connect
-
-forbiddenExcludeUser  Time elapsed: 0.081 s  <<< ERROR!
-java.net.SocketException: Network is unreachable: connect
-
-invalidTokenExcludeUser  Time elapsed: 0.639 s  <<< ERROR!
-java.net.SocketException: Network is unreachable: connect
-
-excludeUser  Time elapsed: 0.158 s  <<< ERROR!
-java.net.SocketException: Network is unreachable: connect
-
-shouldNotExcludeUserWithCart  Time elapsed: 0.056 s  <<< ERROR!
-java.net.SocketException: Network is unreachable: connect
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.57 s - in com.desafioapishop.tests.user.DeleteUserTests
+shouldNotExcludeNoRegisteredUser  Time elapsed: 7.779 s
+forbiddenExcludeUser  Time elapsed: 10.85 s
+invalidTokenExcludeUser  Time elapsed: 9.313 s
+excludeUser  Time elapsed: 7.8 s
+shouldNotExcludeUserWithCart  Time elapsed: 7.816 s

@@ -19,7 +19,7 @@ public class FinishOrCancelCartTests extends TestBase {
         String expectedMessage = "Compra finalizada com sucesso";
 
         GlobalParameters globalParameters = new GlobalParameters();
-        String userId = globalParameters.TOREGISTERCART_USERID;
+        String userId = globalParameters.TOFINISHBUY_USERID;
 
         CartRequest cartRequest = new CartRequest();
         cartRequest.setFinishCartRequest(token, userId);

@@ -20,8 +20,10 @@ public class GlobalParameters {
     public static String NONADMIN_USERID;
     public static String NONADMIN_USER;
     public static String NONADMIN_PASSWORD;
+    public static String TONOTEXCLUDECART_USERID;
     public static String TOREGISTERCART_USERID;
     public static String TOCANCELCART_USERID;
+    public static String TOFINISHBUY_USERID;
     public static String TOEXCLUDE_USERID;
     public static String TOEXCLUDE_USER;
     public static String TOREPEAT_PRODUCTNAME;
@@ -50,7 +52,9 @@ public class GlobalParameters {
         NONADMIN_USERID = properties.getProperty("properties.nonadmin.userid");
         NONADMIN_USER = properties.getProperty("properties.nonadmin.user");
         NONADMIN_PASSWORD = properties.getProperty("properties.nonadmin.password");
+        TONOTEXCLUDECART_USERID = properties.getProperty("properties.tonotexcludecart.userid");
         TOCANCELCART_USERID = properties.getProperty("properties.tocancelcart.userid");
+        TOFINISHBUY_USERID = properties.getProperty("properties.tofinishbuy.userid");
         TOREGISTERCART_USERID = properties.getProperty("properties.toregistercart.userid");
         TOEXCLUDE_USERID = properties.getProperty("properties.toexclude.userid");
         TOEXCLUDE_USER = properties.getProperty("properties.toexclude.user");

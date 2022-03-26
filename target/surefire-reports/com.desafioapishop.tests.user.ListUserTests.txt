@@ -1,37 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.user.ListUserTests
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 0.606 s <<< FAILURE! - in com.desafioapishop.tests.user.ListUserTests
-listOneUser  Time elapsed: 0.061 s  <<< ERROR!
-java.net.SocketException: Network is unreachable: connect
-
-forbiddenListUser  Time elapsed: 0.051 s  <<< ERROR!
-java.net.SocketException: Network is unreachable: connect
-
-shouldNotFindUserToList{String, String, String}[1]  Time elapsed: 0.082 s  <<< ERROR!
-java.net.SocketException: Network is unreachable: connect
-
-shouldNotFindUserToList{String, String, String}[2]  Time elapsed: 0.045 s  <<< ERROR!
-java.net.SocketException: Network is unreachable: connect
-
-shouldNotFindUserToList{String, String, String}[3]  Time elapsed: 0.045 s  <<< ERROR!
-java.net.SocketException: Network is unreachable: connect
-
-shouldNotFindUserToList{String, String, String}[4]  Time elapsed: 0.042 s  <<< ERROR!
-java.net.SocketException: Network is unreachable: connect
-
-shouldNotFindUserToList{String, String, String}[5]  Time elapsed: 0.043 s  <<< ERROR!
-java.net.SocketException: Network is unreachable: connect
-
-invalidTokenListUser  Time elapsed: 0.056 s  <<< ERROR!
-java.net.SocketException: Network is unreachable: connect
-
-listUsersWithFilters{String, String, String}[1]  Time elapsed: 0.05 s  <<< ERROR!
-java.net.SocketException: Network is unreachable: connect
-
-listUsersWithFilters{String, String, String}[2]  Time elapsed: 0.076 s  <<< ERROR!
-java.net.SocketException: Network is unreachable: connect
-
-listUsersWithFilters{String, String, String}[3]  Time elapsed: 0.053 s  <<< ERROR!
-java.net.SocketException: Network is unreachable: connect
-
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 88.089 s - in com.desafioapishop.tests.user.ListUserTests
+listOneUser  Time elapsed: 7.824 s
+forbiddenListUser  Time elapsed: 9.882 s
+shouldNotFindUserToList{String, String, String}[1]  Time elapsed: 7.758 s
+shouldNotFindUserToList{String, String, String}[2]  Time elapsed: 7.882 s
+shouldNotFindUserToList{String, String, String}[3]  Time elapsed: 7.786 s
+shouldNotFindUserToList{String, String, String}[4]  Time elapsed: 7.831 s
+shouldNotFindUserToList{String, String, String}[5]  Time elapsed: 7.82 s
+invalidTokenListUser  Time elapsed: 7.767 s
+listUsersWithFilters{String, String, String}[1]  Time elapsed: 7.842 s
+listUsersWithFilters{String, String, String}[2]  Time elapsed: 7.797 s
+listUsersWithFilters{String, String, String}[3]  Time elapsed: 7.856 s

@@ -1,182 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.desafioapishop.tests.cart.RegisterCartTests" time="64.848" tests="12" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.desafioapishop.tests.cart.RegisterCartTests" time="96.905" tests="12" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="sun.desktop" value="windows"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="java.specification.version" value="1.8"/>
+    <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Mila\Documents\Arquivos-repetidos-hd\desafio-api-shop\target\test-classes;C:\Users\Mila\Documents\Arquivos-repetidos-hd\desafio-api-shop\target\classes;C:\Users\Mila\.m2\repository\io\rest-assured\rest-assured\4.3.3\rest-assured-4.3.3.jar;C:\Users\Mila\.m2\repository\org\codehaus\groovy\groovy\3.0.7\groovy-3.0.7.jar;C:\Users\Mila\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.7\groovy-xml-3.0.7.jar;C:\Users\Mila\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\Mila\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\Mila\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Mila\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\Mila\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\Mila\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Mila\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Mila\.m2\repository\io\rest-assured\json-path\4.3.3\json-path-4.3.3.jar;C:\Users\Mila\.m2\repository\org\codehaus\groovy\groovy-json\3.0.7\groovy-json-3.0.7.jar;C:\Users\Mila\.m2\repository\io\rest-assured\rest-assured-common\4.3.3\rest-assured-common-4.3.3.jar;C:\Users\Mila\.m2\repository\io\rest-assured\xml-path\4.3.3\xml-path-4.3.3.jar;C:\Users\Mila\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Mila\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Mila\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Mila\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Mila\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\Mila\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Mila\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-launcher\1.7.0\junit-platform-launcher-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-runner\1.7.0\junit-platform-runner-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-suite-api\1.7.0\junit-platform-suite-api-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\Mila\.m2\repository\com\h2database\h2\1.4.195\h2-1.4.195.jar;C:\Users\Mila\.m2\repository\org\projectlombok\lombok\1.18.16\lombok-1.18.16.jar;C:\Users\Mila\.m2\repository\net\sf\opencsv\opencsv\2.3\opencsv-2.3.jar;C:\Users\Mila\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Mila\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Mila\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.5\jackson-databind-2.9.5.jar;C:\Users\Mila\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\Mila\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.5\jackson-core-2.9.5.jar;C:\Users\Mila\.m2\repository\io\qameta\allure\allure-junit5\2.13.6\allure-junit5-2.13.6.jar;C:\Users\Mila\.m2\repository\io\qameta\allure\allure-junit-platform\2.13.6\allure-junit-platform-2.13.6.jar;C:\Users\Mila\.m2\repository\io\qameta\allure\allure-java-commons\2.13.6\allure-java-commons-2.13.6.jar;C:\Users\Mila\.m2\repository\io\qameta\allure\allure-model\2.13.6\allure-model-2.13.6.jar;C:\Users\Mila\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Mila\.m2\repository\org\apache\tika\tika-core\1.24.1\tika-core-1.24.1.jar;C:\Users\Mila\.m2\repository\org\jooq\joor-java-8\0.9.13\joor-java-8-0.9.13.jar;C:\Users\Mila\.m2\repository\javax\xml\bind\jaxb-api\2.3.0\jaxb-api-2.3.0.jar;"/>
+    <property name="java.class.path" value="C:\Users\Mila\Documents\Desafio API Base2\desafio-api-shop\target\test-classes;C:\Users\Mila\Documents\Desafio API Base2\desafio-api-shop\target\classes;C:\Users\Mila\.m2\repository\io\rest-assured\rest-assured\4.3.3\rest-assured-4.3.3.jar;C:\Users\Mila\.m2\repository\org\codehaus\groovy\groovy\3.0.7\groovy-3.0.7.jar;C:\Users\Mila\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.7\groovy-xml-3.0.7.jar;C:\Users\Mila\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\Mila\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\Mila\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Mila\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\Mila\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\Mila\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Mila\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Mila\.m2\repository\io\rest-assured\json-path\4.3.3\json-path-4.3.3.jar;C:\Users\Mila\.m2\repository\org\codehaus\groovy\groovy-json\3.0.7\groovy-json-3.0.7.jar;C:\Users\Mila\.m2\repository\io\rest-assured\rest-assured-common\4.3.3\rest-assured-common-4.3.3.jar;C:\Users\Mila\.m2\repository\io\rest-assured\xml-path\4.3.3\xml-path-4.3.3.jar;C:\Users\Mila\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Mila\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Mila\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Mila\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Mila\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\Mila\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Mila\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-launcher\1.7.0\junit-platform-launcher-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-runner\1.7.0\junit-platform-runner-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-suite-api\1.7.0\junit-platform-suite-api-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\Mila\.m2\repository\com\h2database\h2\1.4.195\h2-1.4.195.jar;C:\Users\Mila\.m2\repository\org\projectlombok\lombok\1.18.16\lombok-1.18.16.jar;C:\Users\Mila\.m2\repository\net\sf\opencsv\opencsv\2.3\opencsv-2.3.jar;C:\Users\Mila\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Mila\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Mila\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.5\jackson-databind-2.9.5.jar;C:\Users\Mila\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\Mila\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.5\jackson-core-2.9.5.jar;C:\Users\Mila\.m2\repository\io\qameta\allure\allure-junit5\2.13.6\allure-junit5-2.13.6.jar;C:\Users\Mila\.m2\repository\io\qameta\allure\allure-junit-platform\2.13.6\allure-junit-platform-2.13.6.jar;C:\Users\Mila\.m2\repository\io\qameta\allure\allure-java-commons\2.13.6\allure-java-commons-2.13.6.jar;C:\Users\Mila\.m2\repository\io\qameta\allure\allure-model\2.13.6\allure-model-2.13.6.jar;C:\Users\Mila\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Mila\.m2\repository\org\apache\tika\tika-core\1.24.1\tika-core-1.24.1.jar;C:\Users\Mila\.m2\repository\org\jooq\joor-java-8\0.9.13\joor-java-8-0.9.13.jar;C:\Users\Mila\.m2\repository\javax\xml\bind\jaxb-api\2.3.0\jaxb-api-2.3.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="America/Sao_Paulo"/>
-    <property name="java.vm.specification.version" value="1.8"/>
     <property name="os.name" value="Windows 10"/>
-    <property name="user.country" value="BR"/>
+    <property name="java.vm.specification.version" value="15"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Mila\AppData\Local\Temp\surefire7934761982234906771\surefirebooter69189840013936323.jar C:\Users\Mila\AppData\Local\Temp\surefire7934761982234906771 2022-03-25T21-35-18_831-jvmRun1 surefire7100360402310913410tmp surefire_0182491624358378357tmp"/>
-    <property name="surefire.test.class.path" value="C:\Users\Mila\Documents\Arquivos-repetidos-hd\desafio-api-shop\target\test-classes;C:\Users\Mila\Documents\Arquivos-repetidos-hd\desafio-api-shop\target\classes;C:\Users\Mila\.m2\repository\io\rest-assured\rest-assured\4.3.3\rest-assured-4.3.3.jar;C:\Users\Mila\.m2\repository\org\codehaus\groovy\groovy\3.0.7\groovy-3.0.7.jar;C:\Users\Mila\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.7\groovy-xml-3.0.7.jar;C:\Users\Mila\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\Mila\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\Mila\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Mila\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\Mila\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\Mila\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Mila\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Mila\.m2\repository\io\rest-assured\json-path\4.3.3\json-path-4.3.3.jar;C:\Users\Mila\.m2\repository\org\codehaus\groovy\groovy-json\3.0.7\groovy-json-3.0.7.jar;C:\Users\Mila\.m2\repository\io\rest-assured\rest-assured-common\4.3.3\rest-assured-common-4.3.3.jar;C:\Users\Mila\.m2\repository\io\rest-assured\xml-path\4.3.3\xml-path-4.3.3.jar;C:\Users\Mila\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Mila\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Mila\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Mila\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Mila\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\Mila\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Mila\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-launcher\1.7.0\junit-platform-launcher-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-runner\1.7.0\junit-platform-runner-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-suite-api\1.7.0\junit-platform-suite-api-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\Mila\.m2\repository\com\h2database\h2\1.4.195\h2-1.4.195.jar;C:\Users\Mila\.m2\repository\org\projectlombok\lombok\1.18.16\lombok-1.18.16.jar;C:\Users\Mila\.m2\repository\net\sf\opencsv\opencsv\2.3\opencsv-2.3.jar;C:\Users\Mila\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Mila\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Mila\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.5\jackson-databind-2.9.5.jar;C:\Users\Mila\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\Mila\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.5\jackson-core-2.9.5.jar;C:\Users\Mila\.m2\repository\io\qameta\allure\allure-junit5\2.13.6\allure-junit5-2.13.6.jar;C:\Users\Mila\.m2\repository\io\qameta\allure\allure-junit-platform\2.13.6\allure-junit-platform-2.13.6.jar;C:\Users\Mila\.m2\repository\io\qameta\allure\allure-java-commons\2.13.6\allure-java-commons-2.13.6.jar;C:\Users\Mila\.m2\repository\io\qameta\allure\allure-model\2.13.6\allure-model-2.13.6.jar;C:\Users\Mila\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Mila\.m2\repository\org\apache\tika\tika-core\1.24.1\tika-core-1.24.1.jar;C:\Users\Mila\.m2\repository\org\jooq\joor-java-8\0.9.13\joor-java-8-0.9.13.jar;C:\Users\Mila\.m2\repository\javax\xml\bind\jaxb-api\2.3.0\jaxb-api-2.3.0.jar;"/>
-    <property name="allure.results.directory" value="C:\Users\Mila\Documents\Arquivos-repetidos-hd\desafio-api-shop\target/allure-results"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\Mila\AppData\Local\Temp\surefire6397986145245288106\surefirebooter192232804086110659.jar C:\Users\Mila\AppData\Local\Temp\surefire6397986145245288106 2022-03-26T12-19-01_624-jvmRun1 surefire3502002990349853887tmp surefire_05165366813316994544tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Mila\Documents\Desafio API Base2\desafio-api-shop\target\test-classes;C:\Users\Mila\Documents\Desafio API Base2\desafio-api-shop\target\classes;C:\Users\Mila\.m2\repository\io\rest-assured\rest-assured\4.3.3\rest-assured-4.3.3.jar;C:\Users\Mila\.m2\repository\org\codehaus\groovy\groovy\3.0.7\groovy-3.0.7.jar;C:\Users\Mila\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.7\groovy-xml-3.0.7.jar;C:\Users\Mila\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\Mila\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\Mila\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Mila\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\Mila\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\Mila\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Mila\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Mila\.m2\repository\io\rest-assured\json-path\4.3.3\json-path-4.3.3.jar;C:\Users\Mila\.m2\repository\org\codehaus\groovy\groovy-json\3.0.7\groovy-json-3.0.7.jar;C:\Users\Mila\.m2\repository\io\rest-assured\rest-assured-common\4.3.3\rest-assured-common-4.3.3.jar;C:\Users\Mila\.m2\repository\io\rest-assured\xml-path\4.3.3\xml-path-4.3.3.jar;C:\Users\Mila\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Mila\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Mila\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Mila\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Mila\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\Mila\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Mila\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-launcher\1.7.0\junit-platform-launcher-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-runner\1.7.0\junit-platform-runner-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\platform\junit-platform-suite-api\1.7.0\junit-platform-suite-api-1.7.0.jar;C:\Users\Mila\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\Mila\.m2\repository\com\h2database\h2\1.4.195\h2-1.4.195.jar;C:\Users\Mila\.m2\repository\org\projectlombok\lombok\1.18.16\lombok-1.18.16.jar;C:\Users\Mila\.m2\repository\net\sf\opencsv\opencsv\2.3\opencsv-2.3.jar;C:\Users\Mila\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Mila\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Mila\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.5\jackson-databind-2.9.5.jar;C:\Users\Mila\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\Mila\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.5\jackson-core-2.9.5.jar;C:\Users\Mila\.m2\repository\io\qameta\allure\allure-junit5\2.13.6\allure-junit5-2.13.6.jar;C:\Users\Mila\.m2\repository\io\qameta\allure\allure-junit-platform\2.13.6\allure-junit-platform-2.13.6.jar;C:\Users\Mila\.m2\repository\io\qameta\allure\allure-java-commons\2.13.6\allure-java-commons-2.13.6.jar;C:\Users\Mila\.m2\repository\io\qameta\allure\allure-model\2.13.6\allure-model-2.13.6.jar;C:\Users\Mila\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Mila\.m2\repository\org\apache\tika\tika-core\1.24.1\tika-core-1.24.1.jar;C:\Users\Mila\.m2\repository\org\jooq\joor-java-8\0.9.13\joor-java-8-0.9.13.jar;C:\Users\Mila\.m2\repository\javax\xml\bind\jaxb-api\2.3.0\jaxb-api-2.3.0.jar;"/>
+    <property name="allure.results.directory" value="C:\Users\Mila\Documents\Desafio API Base2\desafio-api-shop\target/allure-results"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Mila"/>
     <property name="user.language" value="pt"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_202\jre"/>
-    <property name="basedir" value="C:\Users\Mila\Documents\Arquivos-repetidos-hd\desafio-api-shop"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-15.0.2"/>
     <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Mila\Documents\Desafio API Base2\desafio-api-shop"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Mila\AppData\Local\Temp\surefire7934761982234906771\surefirebooter69189840013936323.jar;C:\Users\Mila\.m2\repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
+    <property name="surefire.real.class.path" value="C:\Users\Mila\AppData\Local\Temp\surefire6397986145245288106\surefirebooter192232804086110659.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.runtime.version" value="15.0.2+7-27"/>
     <property name="user.name" value="Mila"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="junit.jupiter.execution.parallel.config.strategy" value="dynamic"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="junit.jupiter.execution.parallel.enabled" value="true"/>
     <property name="localRepository" value="C:\Users\Mila\.m2\repository"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\Mila\AppData\Local\Temp\"/>
-    <property name="java.version" value="1.8.0_202"/>
-    <property name="user.dir" value="C:\Users\Mila\Documents\Arquivos-repetidos-hd\desafio-api-shop"/>
+    <property name="java.version" value="15.0.2"/>
+    <property name="user.dir" value="C:\Users\Mila\Documents\Desafio API Base2\desafio-api-shop"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\maven\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files\dotnet\;C:\drivers;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Mila\scoop\shims;C:\Users\Mila\AppData\Local\Microsoft\WindowsApps;;C:\Users\Mila\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.4\bin;;C:\Program Files\OpenSSL-Win64\bin;C:\Program Files\heroku\bin;C:\Users\Mila\.dotnet\tools;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\maven\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\drivers;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Mila\scoop\shims;C:\Users\Mila\AppData\Local\Microsoft\WindowsApps;;C:\Users\Mila\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.4\bin;;C:\Program Files\OpenSSL-Win64\bin;C:\Program Files\heroku\bin;C:\Users\Mila\.dotnet\tools;."/>
     <property name="junit.jupiter.extensions.autodetection.enabled" value="true"/>
-    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="25.202-b08"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="java.vm.version" value="15.0.2+7-27"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="52.0"/>
+    <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="successfulRegisterCart" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="3.663">
-    <failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;422&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-1 expectation failed.
-Expected status code <201> but was <422>.
-
-	at com.desafioapishop.tests.cart.RegisterCartTests.successfulRegisterCart(RegisterCartTests.java:47)
-]]></failure>
-    <system-out><![CDATA[Request method:	POST
-Request URI:	https://shop-prototype-mila.herokuapp.com/carts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJTaG9wIFByb3RvdHlwZSBBUEkiLCJzdWIiOiIxIiwiaWF0IjoxNjQ4MjU0OTg2LCJleHAiOjE2NDgzNDEzODZ9.DmDDdXNRBKMJtt_GvbjXOHNaPdL6fW_vgRp27s9sMM0
-				Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "products": [
-        {
-            "productId": "1",
-            "quantity": "2"
-        }
-    ],
-    "userId": "2"
-}
-
-HTTP/1.1 422 
-Server: Cowboy
-Connection: keep-alive
-X-Content-Type-Options: nosniff
-X-Xss-Protection: 1; mode=block
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Pragma: no-cache
-Expires: 0
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Sat, 26 Mar 2022 00:36:28 GMT
-Via: 1.1 vegur
-
-{
-    "timestamp": 1648254988543,
-    "status": 422,
-    "error": "",
-    "message": "Não é possível cadastrar dois carrinhos para o mesmo usuário",
-    "path": "/carts"
-}
-]]></system-out>
-  </testcase>
-  <testcase name="shouldNotRegisterCartForUserWithAlreadyExistingCart" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="5.503">
-    <failure message="1 expectation failed.&#10;Expected status code &lt;422&gt; but was &lt;201&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-1 expectation failed.
-Expected status code <422> but was <201>.
-
-	at com.desafioapishop.tests.cart.RegisterCartTests.shouldNotRegisterCartForUserWithAlreadyExistingCart(RegisterCartTests.java:73)
-]]></failure>
-    <system-out><![CDATA[Request method:	POST
-Request URI:	https://shop-prototype-mila.herokuapp.com/carts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJTaG9wIFByb3RvdHlwZSBBUEkiLCJzdWIiOiIxIiwiaWF0IjoxNjQ4MjU0OTkxLCJleHAiOjE2NDgzNDEzOTF9.-2gOII5yLlxiO1scJL4Z4p1uu2tK1y7GVA2e0BvXMdc
-				Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "products": [
-        {
-            "productId": "1",
-            "quantity": "2"
-        }
-    ],
-    "userId": "3"
-}
-
-HTTP/1.1 201 
-Server: Cowboy
-Connection: keep-alive
-Location: https://shop-prototype-mila.herokuapp.com/carts/8
-X-Content-Type-Options: nosniff
-X-Xss-Protection: 1; mode=block
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Pragma: no-cache
-Expires: 0
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Sat, 26 Mar 2022 00:36:33 GMT
-Via: 1.1 vegur
-
-{
-    "message": "Cadastro realizado com sucesso",
-    "id": 8,
-    "date": "26-03-2022 00:36:33"
-}
-]]></system-out>
-  </testcase>
-  <testcase name="forbiddenRegisterCart" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="5.049"/>
-  <testcase name="shouldNotRegisterCartWithNonExistingProduct" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="4.723"/>
-  <testcase name="shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[1]" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="4.272"/>
-  <testcase name="shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[2]" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="10.273"/>
-  <testcase name="shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[3]" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="8.169"/>
-  <testcase name="shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[4]" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="6.102"/>
-  <testcase name="shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[5]" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="4.28"/>
-  <testcase name="shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[6]" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="3.822"/>
-  <testcase name="shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[7]" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="4.743"/>
-  <testcase name="shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[8]" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="4.125"/>
+  <testcase name="successfulRegisterCart" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="7.844"/>
+  <testcase name="shouldNotRegisterCartForUserWithAlreadyExistingCart" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="7.895"/>
+  <testcase name="forbiddenRegisterCart" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="7.816"/>
+  <testcase name="shouldNotRegisterCartWithNonExistingProduct" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="7.786"/>
+  <testcase name="shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[1]" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="8.495"/>
+  <testcase name="shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[2]" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="9.131"/>
+  <testcase name="shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[3]" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="7.927"/>
+  <testcase name="shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[4]" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="7.792"/>
+  <testcase name="shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[5]" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="7.942"/>
+  <testcase name="shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[6]" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="7.777"/>
+  <testcase name="shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[7]" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="8.019"/>
+  <testcase name="shouldNotRegisterCartWithInvalidParameters{String, String, String, String, String}[8]" classname="com.desafioapishop.tests.cart.RegisterCartTests" time="8.435"/>
 </testsuite>

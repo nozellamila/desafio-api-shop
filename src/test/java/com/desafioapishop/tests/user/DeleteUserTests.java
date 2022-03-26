@@ -55,7 +55,7 @@ public class DeleteUserTests extends TestBase {
 
         GlobalParameters globalParameters = new GlobalParameters();
 
-        String userId = globalParameters.TOREGISTERCART_USERID;
+        String userId = globalParameters.TONOTEXCLUDECART_USERID;
 
         UserRequest userRequest = new UserRequest();
         userRequest.setDeleteUserRequest(token, userId);

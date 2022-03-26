@@ -54,7 +54,7 @@ public class ListUserTests extends TestBase {
 
         Response response = userRequest.executeRequestNoLog();
 
-        assertEquals(response.statusCode(), expectedStatusCode);
+        assertEquals(expectedStatusCode, response.statusCode());
         assertEquals(expectedReturn, response.body().jsonPath().get("content.email").toString());
     }
 

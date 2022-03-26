@@ -34,8 +34,7 @@ public class RegisterCartTests extends TestBase {
         Pattern pattern = Pattern.compile(patternStr);
 
         GlobalParameters globalParameters = new GlobalParameters();
-        String userId = "4";
-                //globalParameters.NONADMIN_USERID;
+        String userId = globalParameters.NONADMIN_USERID;
 
         List<ProductCartBody> productCartBodyList = new ArrayList<>();
         productCartBodyList.add(new ProductCartBody());
@@ -61,7 +60,7 @@ public class RegisterCartTests extends TestBase {
 
         GlobalParameters globalParameters = new GlobalParameters();
 
-        String userId = globalParameters.TOREGISTERCART_USERID;
+        String userId = "1";
         List<ProductCartBody> productCartBodyList = new ArrayList<>();
         productCartBodyList.add(new ProductCartBody());
 

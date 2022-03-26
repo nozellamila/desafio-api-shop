@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.product.DeleteProductTests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 11.953 s <<< FAILURE! - in com.desafioapishop.tests.product.DeleteProductTests
-excludeProduct  Time elapsed: 2.227 s  <<< FAILURE!
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.233 s <<< FAILURE! - in com.desafioapishop.tests.product.DeleteProductTests
+excludeProduct  Time elapsed: 4.349 s  <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 JSON path message doesn't match.
@@ -11,7 +11,7 @@ Expected: Produto excluído com sucesso
 
 	at com.desafioapishop.tests.product.DeleteProductTests.excludeProduct(DeleteProductTests.java:31)
 
-shouldNotExcludeProductForNonAdminUser  Time elapsed: 3.078 s
-forbiddenExcludeProduct  Time elapsed: 2.862 s
-shouldNotExcludeProductBelongingToACart  Time elapsed: 1.88 s
-shouldNotExcludeNonExistentProduct  Time elapsed: 1.892 s
+shouldNotExcludeProductForNonAdminUser  Time elapsed: 6.346 s
+forbiddenExcludeProduct  Time elapsed: 3.274 s
+shouldNotExcludeProductBelongingToACart  Time elapsed: 4.119 s
+shouldNotExcludeNonExistentProduct  Time elapsed: 6.118 s

@@ -1,15 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.user.UpdateUserTests
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.434 s - in com.desafioapishop.tests.user.UpdateUserTests
-forbiddenUserUpdate  Time elapsed: 3.109 s
-invalidParametersUserUpdate{String, String, String, String}[1]  Time elapsed: 1.856 s
-invalidParametersUserUpdate{String, String, String, String}[2]  Time elapsed: 2.038 s
-invalidParametersUserUpdate{String, String, String, String}[3]  Time elapsed: 2.215 s
-invalidParametersUserUpdate{String, String, String, String}[4]  Time elapsed: 1.789 s
-invalidParametersUserUpdate{String, String, String, String}[5]  Time elapsed: 2.133 s
-invalidParametersUserUpdate{String, String, String, String}[6]  Time elapsed: 2.905 s
-invalidParametersUserUpdate{String, String, String, String}[7]  Time elapsed: 3.228 s
-shouldNotUpdateUserWithOtherUsersEmail  Time elapsed: 2.306 s
-successfulUserUpdate  Time elapsed: 2.322 s
-invalidTokenUserUpdate  Time elapsed: 2.448 s
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.691 s - in com.desafioapishop.tests.user.UpdateUserTests
+forbiddenUserUpdate  Time elapsed: 4.102 s
+invalidParametersUserUpdate{String, String, String, String}[1]  Time elapsed: 2.573 s
+invalidParametersUserUpdate{String, String, String, String}[2]  Time elapsed: 3.088 s
+invalidParametersUserUpdate{String, String, String, String}[3]  Time elapsed: 2.725 s
+invalidParametersUserUpdate{String, String, String, String}[4]  Time elapsed: 2.486 s
+invalidParametersUserUpdate{String, String, String, String}[5]  Time elapsed: 2.482 s
+invalidParametersUserUpdate{String, String, String, String}[6]  Time elapsed: 2.681 s
+invalidParametersUserUpdate{String, String, String, String}[7]  Time elapsed: 3.306 s
+shouldNotUpdateUserWithOtherUsersEmail  Time elapsed: 3.562 s
+successfulUserUpdate  Time elapsed: 4.273 s
+invalidTokenUserUpdate  Time elapsed: 5.344 s

@@ -1,12 +1,29 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.product.UpdateProductTests
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.06 s - in com.desafioapishop.tests.product.UpdateProductTests
-invalidParametersUpdateProduct{String, Float, Integer, String}[1]  Time elapsed: 1.846 s
-invalidParametersUpdateProduct{String, Float, Integer, String}[2]  Time elapsed: 1.83 s
-invalidParametersUpdateProduct{String, Float, Integer, String}[3]  Time elapsed: 2.119 s
-invalidParametersUpdateProduct{String, Float, Integer, String}[4]  Time elapsed: 1.917 s
-shouldNotUpdateWithDuplicatedName  Time elapsed: 2.073 s
-successfulUpdateProduct  Time elapsed: 2.139 s
-shouldNotUpdateProductForNonAdminProduct  Time elapsed: 2.714 s
-forbiddenUpdateProduct  Time elapsed: 2.336 s
+Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 3.265 s <<< FAILURE! - in com.desafioapishop.tests.product.UpdateProductTests
+invalidParametersUpdateProduct{String, Float, Integer, String}[1]  Time elapsed: 2.682 s  <<< ERROR!
+java.net.SocketException: Network is unreachable: connect
+	at com.desafioapishop.tests.product.UpdateProductTests.invalidParametersUpdateProduct(UpdateProductTests.java:79)
+
+invalidParametersUpdateProduct{String, Float, Integer, String}[2]  Time elapsed: 0.14 s  <<< ERROR!
+java.net.SocketException: Network is unreachable: connect
+
+invalidParametersUpdateProduct{String, Float, Integer, String}[3]  Time elapsed: 0.101 s  <<< ERROR!
+java.net.SocketException: Network is unreachable: connect
+
+invalidParametersUpdateProduct{String, Float, Integer, String}[4]  Time elapsed: 0.069 s  <<< ERROR!
+java.net.SocketException: Network is unreachable: connect
+
+shouldNotUpdateWithDuplicatedName  Time elapsed: 0.063 s  <<< ERROR!
+java.net.SocketException: Network is unreachable: connect
+
+successfulUpdateProduct  Time elapsed: 0.048 s  <<< ERROR!
+java.net.SocketException: Network is unreachable: connect
+
+shouldNotUpdateProductForNonAdminProduct  Time elapsed: 0.055 s  <<< ERROR!
+java.net.SocketException: Network is unreachable: connect
+
+forbiddenUpdateProduct  Time elapsed: 0.05 s  <<< ERROR!
+java.net.SocketException: Network is unreachable: connect
+

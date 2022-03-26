@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.product.ListProductTests
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.974 s - in com.desafioapishop.tests.product.ListProductTests
-listProductWithFilters{String, String, String}[1]  Time elapsed: 2.065 s
-listProductWithFilters{String, String, String}[2]  Time elapsed: 2.103 s
-listProductWithFilters{String, String, String}[3]  Time elapsed: 1.815 s
-listProductWithFilters{String, String, String}[4]  Time elapsed: 2.208 s
-listProductWithFilters{String, String, String}[5]  Time elapsed: 1.842 s
-shouldNotFindProductToList{String, String, String, String, String}[1]  Time elapsed: 1.772 s
-shouldNotFindProductToList{String, String, String, String, String}[2]  Time elapsed: 2.242 s
-shouldNotFindProductToList{String, String, String, String, String}[3]  Time elapsed: 1.846 s
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.278 s - in com.desafioapishop.tests.product.ListProductTests
+listProductWithFilters{String, String, String}[1]  Time elapsed: 3.421 s
+listProductWithFilters{String, String, String}[2]  Time elapsed: 6.125 s
+listProductWithFilters{String, String, String}[3]  Time elapsed: 3.558 s
+listProductWithFilters{String, String, String}[4]  Time elapsed: 5.524 s
+listProductWithFilters{String, String, String}[5]  Time elapsed: 3.645 s
+shouldNotFindProductToList{String, String, String, String, String}[1]  Time elapsed: 6.466 s
+shouldNotFindProductToList{String, String, String, String, String}[2]  Time elapsed: 4.239 s
+shouldNotFindProductToList{String, String, String, String, String}[3]  Time elapsed: 3.211 s

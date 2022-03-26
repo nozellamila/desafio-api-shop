@@ -28,7 +28,7 @@ public class RegisterUserTests extends TestBase {
     public void successfulRegisterUser(){
         int expectedStatusCode = HttpStatus.SC_CREATED;
 
-        int random = new Random().nextInt(100);
+        int random = new Random().nextInt(1000);
         String email = "fool-" + random + "@email.com" ;
         String name = "fool";
         String password = "123456";

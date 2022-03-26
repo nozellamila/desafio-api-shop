@@ -12,7 +12,7 @@ public class TestBase {
 
     @BeforeAll
     public static void beforeSuite(){
-
+        DBUtils.cleanDB();
         DBUtils.executeInitialQuery();
     }
 
@@ -20,6 +20,10 @@ public class TestBase {
     public void beforeMethod(){
         AuthBody authBody = new AuthBody();
         AuthUtils authUtils = new AuthUtils();
+
+        DBUtils.cleanDB();
+        DBUtils.executeInitialQuery();
+
         token = authUtils.generateToken(authBody);
     }
 }

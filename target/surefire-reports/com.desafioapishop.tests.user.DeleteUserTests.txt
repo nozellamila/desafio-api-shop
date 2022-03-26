@@ -1,17 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioapishop.tests.user.DeleteUserTests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.609 s <<< FAILURE! - in com.desafioapishop.tests.user.DeleteUserTests
-shouldNotExcludeNoRegisteredUser  Time elapsed: 1.721 s
-forbiddenExcludeUser  Time elapsed: 2.658 s
-invalidTokenExcludeUser  Time elapsed: 2.309 s
-excludeUser  Time elapsed: 1.849 s  <<< FAILURE!
-java.lang.AssertionError: 
-1 expectation failed.
-JSON path message doesn't match.
-Expected: Usuário excluído com sucesso
-  Actual: Nenhum usuário excluído
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 3.22 s <<< FAILURE! - in com.desafioapishop.tests.user.DeleteUserTests
+shouldNotExcludeNoRegisteredUser  Time elapsed: 0.072 s  <<< ERROR!
+java.net.SocketException: Network is unreachable: connect
 
-	at com.desafioapishop.tests.user.DeleteUserTests.excludeUser(DeleteUserTests.java:33)
+forbiddenExcludeUser  Time elapsed: 0.081 s  <<< ERROR!
+java.net.SocketException: Network is unreachable: connect
 
-shouldNotExcludeUserWithCart  Time elapsed: 2.018 s
+invalidTokenExcludeUser  Time elapsed: 0.639 s  <<< ERROR!
+java.net.SocketException: Network is unreachable: connect
+
+excludeUser  Time elapsed: 0.158 s  <<< ERROR!
+java.net.SocketException: Network is unreachable: connect
+
+shouldNotExcludeUserWithCart  Time elapsed: 0.056 s  <<< ERROR!
+java.net.SocketException: Network is unreachable: connect
+

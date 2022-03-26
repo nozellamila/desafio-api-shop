@@ -1,9 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.desafioapishop.tests.product.DeleteProductTests
--------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 41.347 s - in com.desafioapishop.tests.product.DeleteProductTests
-excludeProduct  Time elapsed: 7.935 s
-shouldNotExcludeProductForNonAdminUser  Time elapsed: 9.065 s
-forbiddenExcludeProduct  Time elapsed: 7.88 s
-shouldNotExcludeProductBelongingToACart  Time elapsed: 7.879 s
-shouldNotExcludeNonExistentProduct  Time elapsed: 8.575 s
